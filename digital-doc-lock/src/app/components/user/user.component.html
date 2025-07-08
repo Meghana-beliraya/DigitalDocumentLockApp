@@ -1,0 +1,72 @@
+<div class="wrapper">
+  <!-- Sidebar Section -->
+  <div class="sidebar" [class.collapsed]="isSidebarCollapsed">
+    <div class="sidebar-header">
+      <img
+        src="assets/images/welcomelogo.drawio (2).png"
+        alt="DigitalDocLock Logo"
+        class="logo-img"
+        [class.small]="isSidebarCollapsed"
+      />
+      <button
+        class="toggle-btn"
+        [ngClass]="{ 'collapsed-btn': isSidebarCollapsed, 'expanded-btn': !isSidebarCollapsed }"
+        (click)="toggleSidebar()"
+        aria-label="Toggle Sidebar"
+      >
+        <span [innerHTML]="isSidebarCollapsed ? '&#x25B6;' : '&#x25C0;'"></span>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="dashboard" routerLinkActive="active">
+              <fa-icon [icon]="faTachometerAlt"></fa-icon>
+              <span class="nav-label" [class.hidden]="isSidebarCollapsed">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="upload" routerLinkActive="active">
+              <fa-icon [icon]="faUpload"></fa-icon>
+              <span class="nav-label" [class.hidden]="isSidebarCollapsed">Upload Document</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="documents/my" routerLinkActive="active">
+              <fa-icon [icon]="faFolderOpen"></fa-icon>
+              <span class="nav-label" [class.hidden]="isSidebarCollapsed">My Documents</span>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Logout Section -->
+    <div class="logout-section" (click)="logout()">
+      <i class="fas fa-sign-out-alt"></i>
+      <span class="nav-label" [class.hidden]="isSidebarCollapsed">Logout</span>
+
+    </div>
+  </div>
+
+  <!-- Logout Confirmation Modal -->
+  <div class="logout-modal" *ngIf="showLogoutConfirm">
+    <div class="modal-content">
+      <p>Are you sure you want to exit?</p>
+      <div class="modal-actions">
+        <button (click)="confirmLogout(true)" class="yes-btn">Yes</button>
+        <button (click)="confirmLogout(false)" class="no-btn">No</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Main Content Section -->
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+</div>

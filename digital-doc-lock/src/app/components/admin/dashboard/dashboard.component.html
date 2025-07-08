@@ -1,0 +1,53 @@
+<div class="dashboard-container">
+  <!-- Admin Tag with Icon -->
+  <div class="admin-tag">
+    <fa-icon [icon]="faShieldAlt"></fa-icon>
+    <span>Admin</span>
+  </div>
+
+  <!-- STAT CARDS -->
+  <div class="stats-cards">
+    <div class="card user-card">
+      <div class="card-icon"><fa-icon [icon]="faUsers"></fa-icon></div>
+      <div class="card-info">
+        <h4>Total Users</h4>
+        <p>{{ totalUsers }}</p>
+      </div>
+    </div>
+
+    <div class="card doc-card">
+      <div class="card-icon"><fa-icon [icon]="faFolderOpen"></fa-icon></div>
+      <div class="card-info">
+        <h4>Total Files</h4>
+        <p>{{ totalDocuments }}</p>
+      </div>
+    </div>
+
+    <div class="card today-doc-card">
+      <div class="card-icon"><fa-icon [icon]="faUpload"></fa-icon></div>
+      <div class="card-info">
+        <h4>Uploads Today</h4>
+        <p>{{ documentsToday }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SYSTEM ACTIVITY LOG -->
+  <div class="system-activity-log">
+    <h3>System Activity Log</h3>
+
+    <div class="log-container" *ngIf="activityLogs.length > 0; else noLogs">
+      <div class="log-entry" *ngFor="let log of activityLogs">
+        <p>
+          <strong>{{ log.firstName }}</strong>: {{ log.message }} <br />
+          <small>{{ log.timestamp | date: 'short' }}</small>
+        </p>
+      </div>
+    </div>
+
+    <!-- No logs -->
+    <ng-template #noLogs>
+      <p>No recent activity available.</p>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,149 @@
+<!-- DASHBOARD GRID -->
+<div class="dashboard-grid">
+  <!-- LEFT SECTION -->
+  <div class="left-section">
+
+    <!-- HEADER WITH PROFILE ICON -->
+    <div class="profile-header">
+      <div class="profile-card">
+        <div class="avatar-wrapper">
+          <img [src]="profileImageUrl" alt="Profile Image" class="profile-avatar" />
+          <!-- Image Upload Trigger -->
+          <label for="profileUploadHeader" class="edit-overlay" title="Change Profile Picture">
+            <i class="fas fa-edit"></i>
+          </label>
+          <input type="file" id="profileUploadHeader" accept="image/*" hidden (change)="onFileSelected($event)" />
+        </div>
+        <div class="profile-name welcome-text" (click)="toggleProfile();">
+  <i class="fas fa-leaf"></i> Welcome, {{ profile.firstName }}
+</div>
+
+</div>
+  </div>
+
+<!-- STATS CARDS -->
+<div class="stats">
+  <div class="card total">
+    <h3>Total Files</h3>
+    <p>{{ total_file }}</p>
+  </div>
+  <div class="card doc">
+    <h3>Number of doc files </h3>
+    <p>{{ no_of_docs }}</p>
+  </div>
+  <div class="card pdf">
+    <h3>Number of pdf files</h3>
+    <p>{{ no_of_pdf }}</p>
+  </div>
+</div>
+
+<!-- MODAL: EDIT PROFILE -->
+<div *ngIf="showProfile" class="modal-overlay">
+  <div class="modal-content">
+    <div class="profile-panel">
+      <h3 class="profile-heading">
+      <i class="fas fa-user-edit icon"></i> Edit Profile
+      </h3>
+
+    <!-- PROFILE IMAGE -->
+    <div class="profile-item profile-pic">
+      <div class="profile-img-wrapper">
+        <img [src]="profileImageUrl" alt="Profile Image" class="profile-img" />
+        <label for="profileUploadModal" class="edit-overlay1" title="Change Profile Picture">
+        <i class="fas fa-edit"></i>
+        </label>
+        <input type="file" id="profileUploadModal" accept="image/*" hidden (change)="onFileSelected($event)" />
+      </div>
+    </div>
+
+    <!-- FIRST NAME -->
+    <div class="profile-item">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" [(ngModel)]="profile.firstName" />
+    </div>
+
+    <!-- LAST NAME -->
+    <div class="profile-item">
+      <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" [(ngModel)]="profile.lastName" />
+    </div>
+
+    <!-- EMAIL (READ-ONLY) -->
+    <div class="profile-item">
+      <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="profile.email" readonly />
+    </div>
+    <!-- HIDDEN INPUTS TO BYPASS AUTOFILL -->
+    <input type="text" name="fakeusernameremembered" style="display: none" />
+    <input type="password" name="fakepasswordremembered" style="display: none" />
+
+<!-- OLD PASSWORD (Prevent Autofill) -->
+<div class="profile-item">
+  <label for="oldPassword">Old Password:</label>
+  <input
+  #oldPwdInput
+  type="password"
+  id="oldPassword"
+  name="old-password-no-autofill"
+  [(ngModel)]="oldPassword"
+  readonly
+  (focus)="oldPwdInput.removeAttribute('readonly')"
+  autocomplete="off"
+  aria-autocomplete="none"
+  autocapitalize="off"
+  spellcheck="false"
+/>
+
+</div>
+
+
+<!-- NEW PASSWORD -->
+  <div class="profile-item">
+    <label for="newPassword">New Password:</label>
+       <input type="password" id="newPassword" [(ngModel)]="newPassword" />
+       <small *ngIf="newPassword && !isStrongPassword(newPassword)" style="color: red;">
+          Password must be at least 8 characters, include uppercase, lowercase, number, and special character.
+       </small>
+  </div>
+
+<!-- CONFIRM PASSWORD -->
+  <div class="profile-item">
+    <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" />
+      <small *ngIf="confirmPassword && confirmPassword !== newPassword" style="color: red;">
+        Passwords do not match.
+      </small>
+  </div>
+
+<!-- ERROR DISPLAY -->
+  <div *ngIf="errorMessage" class="error-message">
+    <i class="fas fa-exclamation-circle"></i> {{ errorMessage }}
+  </div>
+
+<!-- ACTION BUTTONS -->
+  <div class="profile-actions">
+    <button (click)="saveProfile()">
+      <i class="fas fa-save"></i> Save Changes
+    </button>
+    <button class="close-btn" (click)="toggleProfile()">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+    <!-- RECENT ACTIVITY -->
+<div class="recent-activities">
+  <h3>Recent Activities</h3>
+  <ul>
+    <li *ngFor="let activity of recentActivities">
+      {{ activity }}
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<!-- TOAST MESSAGE -->
+<div *ngIf="showToast" class="custom-toast" [ngClass]="toastType">
+  {{ toastMessage }}
+</div>

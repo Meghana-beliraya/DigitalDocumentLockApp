@@ -1,0 +1,71 @@
+<div class="user-table-container">
+  <h2><i class="fas fa-users"></i> User Management</h2>
+
+  <div class="user-table-wrapper">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>Status</th>
+          <th>Last Login</th>
+          <th>View Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ getFullName(user) }}</td>
+          <td>
+            <button
+              (click)="onToggleStatus(user)"
+              [ngClass]="{ 'active-btn': user.isActive, 'inactive-btn': !user.isActive }"
+            >
+              <i class="fas fa-exchange-alt"></i>
+              {{ getStatus(user) }}
+            </button>
+          </td>
+          <td>{{ user.lastLogin | date: 'MMM d, y, h:mm a' }}</td>
+          <td class="actions">
+            <button (click)="onView(user)" title="View Details">
+              <i class="fas fa-eye"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- User Info Modal -->
+  <div class="modal-overlay" *ngIf="showModal">
+    <div class="modal-content">
+      <h3><i class="fas fa-id-card"></i> User Info</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <i class="fas fa-envelope icon"></i>
+          <span>{{ selectedUser?.email }}</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-file-alt icon"></i>
+          <span>{{ selectedUser?.totalDocumentsUploaded }} Docs</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock icon"></i>
+          <span>{{ selectedUser?.lastLogin | date: 'MMM d, y, h:mm a' }}</span>
+        </div>
+      </div>
+      <button class="close-btn" (click)="closeModal()">
+        <i class="fas fa-times"></i> Close
+      </button>
+    </div>
+  </div>
+
+  <!-- Custom Confirmation Box -->
+  <div class="confirmation-box" *ngIf="showConfirmationBox">
+    <div class="confirmation-content">
+      <p>{{ confirmationMessage }}</p>
+      <div class="btn-group">
+        <button (click)="confirmToggleStatus(true)" class="confirm-btn">Yes</button>
+        <button (click)="confirmToggleStatus(false)" class="cancel-btn">No</button>
+      </div>
+    </div>
+  </div>
+</div>

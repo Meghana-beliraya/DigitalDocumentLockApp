@@ -1,0 +1,459 @@
+h2 {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.stats {
+  display: flex;                //for arrange cards in a row
+  gap: 20px;                   //for space between cards
+  justify-content: space-between;  // for spread cards evenly
+  flex-wrap: nowrap;            // do not allow cards to wrap to next line
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px; // spa
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;                     // each card takes equal space
+  min-width: 150px;            // minimum width to prevent shrink too small
+  max-width: 300px;            // optional max width to keep them balanced
+  text-align: center;
+
+    &:hover {
+      transform: translateY(-4px); 
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #444;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    &.total {
+      border-left: 6px solid #2196f3;
+    }
+
+    &.doc {
+      border-left: 6px solid #4caf50;
+    }
+
+    &.pdf {
+      border-left: 6px solid #ffc107;
+    }
+  }
+}
+
+.recent-activities {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 35px;
+  max-width: 1200px;
+  margin: 30px auto;
+  margin-left: 20px;
+  box-shadow: 0 8px 20px rgba(0, 233, 93, 0.18);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #007b29;
+    border-bottom: 3px solid #00e95d;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 0.04em;
+    user-select: none;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 320px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00e95d #f1f1f1;
+
+    /* Webkit scrollbar */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #00e95d;
+      border-radius: 10px;
+      border: 2px solid #f1f1f1;
+    }
+
+    li {
+      position: relative;
+      padding: 12px 15px 12px 45px;
+      margin-bottom: 18px;
+      font-size: 1.1rem;
+      color: #2d2d2d;
+      background: #f9fdf8;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 150, 70, 0.1);
+      cursor: default;
+      transition: background-color 0.25s ease, box-shadow 0.25s ease;
+
+      &::before {
+        content: "\f0fe"; /* FontAwesome icon Unicode for "file-upload" */
+        font-family: 'Font Awesome 5 Free'; /* Make sure FA is loaded */
+        font-weight: 900;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #00e95d;
+        font-size: 18px;
+      }
+
+      &:hover {
+        background-color: #e0f7d9;
+        box-shadow: 0 6px 12px rgba(0, 200, 80, 0.2);
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(0, 233, 93, 0.3);
+  }
+}
+
+
+// Profile Styles
+.profile-panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.profile-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #006400;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.profile-stack {
+  display: flex; 
+  flex-direction: column; //vertical stacking of tiems
+  gap: 20px;
+}
+
+.profile-item {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #006400;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #006400;
+      background-color: #fff;
+    }
+  }
+}
+
+.profile-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #006400;
+    transition: 0.3s ease;
+  }
+
+  .edit-overlay1 {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(0, 100, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .edit-overlay1 {
+    opacity: 1;
+  }
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between; // space between the save and cancel
+  margin-top: 20px;
+
+  button {
+    background-color: #28a745;
+    color: white;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+  .close-btn {
+    background-color: #e0e0e0 !important;  // override green
+    color: #333 !important;
+
+    &:hover {
+      background-color: #d5d5d5 !important;
+      color: #000 !important;
+    }
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px #00e95d;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+
+  .profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+
+  .profile-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  .profile-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+  }
+
+  .edit-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #218838;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /*above everything */
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+  animation: fadeInScale 0.3s ease-out;
+}
+
+/* Animation */
+@keyframes fadeInScale {
+0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close Button */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+
+  &:hover {
+    color: #333;
+  }
+}
+//profile images custom message
+.custom-toast {
+  position: fixed;
+  top: 20px; /* Move to top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease-out, fadeOut 0.5s ease-in-out 2.5s;
+}
+
+.custom-toast.success {
+  background-color: #28a745; // green
+}
+
+.custom-toast.error {
+  background-color: #dc3545; // red
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+// profile 
+.welcome-text {
+  font-size: 1.2rem;
+  font-weight: 600; //  text semi-bold 
+  margin-right: 8px;
+  color: #28a745;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // clean and professional
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.05);
+  font-style: italic; // gives a friendly tone
+  color: #006400;
+  background: linear-gradient(to right, #e0f8e9, #ffffff);
+  padding: 8px 16px; //(top-bottom: 8px, left-right: 16px)
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 233, 93, 0.1);
+  cursor: pointer;//pointer on hover
+  transition: all 0.3s ease; 
+
+  &:hover {
+    background: linear-gradient(to right, #c9f7d1, #f1fdf6);
+    transform: translateY(-2px); //slightly upwards on hover
+    box-shadow: 0 6px 12px rgba(0, 200, 80, 0.2);
+    font-style: normal;
+  }
+}

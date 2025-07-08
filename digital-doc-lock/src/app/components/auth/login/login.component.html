@@ -1,0 +1,50 @@
+<div class="login-container">
+  <h2>Login to Your Account</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" autocomplete="off">
+    
+    <!-- Email Field -->
+    <div class="form-group">
+      <label for="email">Email</label>
+
+      <input type="email" id="email" formControlName="email" placeholder="Enter your email" (input)="onInputChange('email')">
+      <span class="error" *ngIf="submitted && loginForm.get('email')?.errors?.['required']">
+        Email is mandatory.
+      </span>
+
+      <span class="error" *ngIf="submitted && loginForm.get('email')?.errors?.['email']">
+        Please enter a valid email address.
+      </span>
+    </div>
+
+    <!-- Password Field -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password" placeholder="Enter your password"(input)="onInputChange('password')">
+      <span class="error" *ngIf="submitted && loginForm.get('password')?.errors?.['required']">
+        Password is mandatory.
+      </span>
+    </div>
+
+    <!-- Login Button -->
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Logging in...' : 'Login' }}
+    </button>
+  </form>
+
+  <!-- Server Error Message -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Loading Spinner -->
+  <div *ngIf="loading" class="spinner-container">
+    <div class="spinner"></div>
+    <p>Processing login...</p>
+  </div>
+
+  <!-- Sign Up Link -->
+  <div class="signup-link">
+    <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+  </div>
+</div>

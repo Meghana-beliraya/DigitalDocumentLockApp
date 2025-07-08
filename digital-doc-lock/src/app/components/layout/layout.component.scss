@@ -1,0 +1,77 @@
+/* Ensure layout doesn’t overflow horizontally */
+:host {
+  display: block;
+  overflow-x: hidden;
+}
+
+/* Layout container */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Full-width header */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #005a24;
+  padding: 1rem 2rem;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo section inside header */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Centered title */
+.header-title {
+  flex: 1;
+  text-align: center;
+  margin-left: -110px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Georgia', 'Times New Roman', serif; /* classic serif fonts */
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* subtle depth */
+  color: #ffffff; /* ensure it's readable on dark background */
+}
+
+
+/* Main Content */
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Footer same width as header */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #005a24;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: 'Georgia', 'Times New Roman', serif; /* classic serif fonts */
+  border-radius: 12px 12px 0 0; /* optional symmetry */
+}

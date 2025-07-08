@@ -1,0 +1,31 @@
+<div class="upload-container">
+  <h2>Upload Your Document</h2>
+
+  <div class="drag-drop-area" (dragover)="onDragOver($event)" (drop)="onDropFile($event)">
+    <p *ngIf="!selectedFile">
+      Drag & Drop your file here or 
+      <label for="fileInput" class="file-label">Browse</label>
+    </p>
+    <p *ngIf="selectedFile" class="file-name">📄 {{ selectedFile.name }}</p>
+
+    <!-- File type-->
+    <small class="file-hint">Only .pdf, .doc, and .docx files are allowed.</small>
+
+    <input type="file" id="fileInput" (change)="onFileSelected($event)" accept=".pdf,.doc,.docx" hidden>
+  </div>
+
+  <div class="form-fields">
+    <input type="password" [(ngModel)]="password" placeholder="Set Password (Mandatory)" name="password">
+
+    <button 
+      (click)="onUpload()" 
+      [disabled]="!selectedFile || !password || isUploading">
+      <span *ngIf="!isUploading">Upload</span>
+      <span *ngIf="isUploading" class="loading-spinner"></span>
+    </button>
+
+    <div *ngIf="uploadMessage" class="alert">
+      {{ uploadMessage }}
+    </div>
+  </div>
+</div>

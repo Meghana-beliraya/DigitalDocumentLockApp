@@ -1,0 +1,462 @@
+.documents-list {
+  padding: 2rem;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+  max-height: 550px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  color: #333;
+
+  h3 {
+    font-size: 1.8rem;
+    color: #1b6337;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+
+.document-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 1030px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .doc-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+
+    .doc-icon {
+  font-size: 1.5rem;
+
+  &.pdf {
+    color: red;
+  }
+
+  &.word {
+    color: #0072c6; // Word blue
+  }
+
+  &.default {
+    color: #333;
+  }
+}
+
+
+    .doc-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #003f5c;
+      margin: 0;
+    }
+  }
+
+  .doc-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 1rem;
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+      color: #444;
+
+      i {
+        color: #0a9396;
+        font-size: 1rem;
+      }
+
+
+    }
+  }
+
+  .doc-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .btn {
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  i {
+    font-size: 1rem;
+  }
+
+  &.view {
+    background-color: #e6f4ea;
+    color: #2e7d32;
+    border: 1px solid #b6ddb8;
+
+    &:hover {
+      background-color: #d0e8d4;
+      border-color: #9fd6a8;
+    }
+  }
+
+  &.download {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+
+    &:hover {
+      background-color: #d0e4f7;
+      border-color: #64b5f6;
+    }
+  }
+
+  &.delete {
+    background-color: #fef0f0;
+    color: #c62828;
+    border: 1px solid #f3c4c4;
+
+    &:hover {
+      background-color: #fddddd;
+      border-color: #e57373;
+    }
+  }
+}
+
+  }
+}
+
+/* Document Viewer Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+  overflow-y: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  height: 90vh;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.document-viewer-panel {
+  text-align: center;
+  flex: 1;
+
+  .viewer-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+
+    .icon {
+      margin-right: 0.5rem;
+      color: #218838;
+    }
+  }
+
+  .document-wrapper {
+    margin-top: 1rem;
+
+    p {
+      color: #777;
+      font-size: 0.95rem;
+    }
+  }
+
+  .document-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .viewer-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: white;
+      background-color: #218838;
+
+      &:hover {
+        background-color: #1c7a34;
+      }
+
+      &.danger {
+        background-color: #ffe6e6;
+        color: #cc0000;
+        font-weight: 700;
+
+        &:hover {
+          background-color: #ffcccc;
+        }
+      }
+
+      &.close-btn {
+        background-color: #6c757d;
+        color: white;
+        margin-left: auto;
+
+        &:hover {
+          background-color: #292d31;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive for document cards */
+@media (max-width: 768px) {
+  .documents-list {
+    padding: 1rem;
+
+    .document-card {
+      padding: 1rem;
+    }
+
+    .viewer-actions {
+      flex-direction: column;
+      align-items: stretch;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+/* Password Modal */
+.password-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.password-modal-content {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  width: 320px;
+  max-width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1b6337;
+    font-weight: 600;
+  }
+
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #218838;
+    }
+  }
+
+  .password-error {
+    color: #d9534f;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 2px;
+  }
+
+  .password-actions {
+    margin-top: 10px;
+
+    button {
+      margin-right: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:first-child {
+        background-color: #218838;
+        color: white;
+      }
+
+      &:last-child {
+        background-color: #6c757d;
+        color: white;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+/* Error Message Banner */
+.error-banner {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 350px;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  span {
+    flex: 1;
+    padding-right: 10px;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: #721c24;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+/* Delete Confirmation Modal */
+.confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+
+  .confirmation-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .confirmation-actions {
+      display: flex;
+      justify-content: space-around;
+
+      .confirm-btn {
+        background-color: #dc3545;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .cancel-btn {
+        background-color: #6c757d;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}

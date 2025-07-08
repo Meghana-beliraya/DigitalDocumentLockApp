@@ -1,0 +1,778 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\Document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|e:\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520065258_CreateDocumentsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520064929_InitialBaseline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockAPI\\DashboardController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 579,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ISignupRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:37:34.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SignupRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv1oAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T06:40:16.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Controllers\\ProfileController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:34:48.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProfileRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAIwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T06:40:20.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IProfileRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:38:08.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T13:01:05.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:33:47.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwFkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T06:27:15.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignupController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\SignupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\SignupController.cs",
+              "RelativeToolTip": "Controllers\\SignupController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T06:43:05.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:35:18.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:39:14.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T14:31:29.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DigitalDocumentLockRepository.csproj",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-03T07:58:24.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DigitalDocumentLockCommon.csproj",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-03T08:08:28.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DocumentController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "Controllers\\DocumentController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:59:07.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAAAGEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T04:48:16.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T14:34:02.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DocumentEncryptionService.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T04:49:40.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20250529144346_AddUserActivityLogTable.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T02:47:13.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IDocumentRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T16:38:37.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T12:47:08.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T12:58:39.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UserActivityLogRepository.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T06:38:32.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sdk.props",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.props",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.props [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-01T05:33:54.678Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.targets [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-01T05:33:40.147Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UpdateProfileRequest.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:42:39.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IDashboardService.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T12:58:19.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T06:39:02.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250524174001_InitialBaseline.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T08:39:58.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250524174629_CreateDocumentsTable.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T13:37:36.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UserActivityLog.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:11:54.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:35:40.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LoginResultDto.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:33:16.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:32:50.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Document.cs",
+              "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "RelativeToolTip": "..\\..\\..\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:11:48.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-26T06:14:49.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:54:56.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250520065258_CreateDocumentsTable.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520065258_CreateDocumentsTable.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520065258_CreateDocumentsTable.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:53:18.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:52:05.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250520064929_InitialBaseline.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520064929_InitialBaseline.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520064929_InitialBaseline.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:49:51.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISignupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:36:18.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T06:56:17.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:35:25.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\TestController.cs",
+              "RelativeDocumentMoniker": "TestController.cs",
+              "ToolTip": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\TestController.cs",
+              "RelativeToolTip": "TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T06:00:02.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockAPI\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockAPI\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T05:47:10.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:44:42.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:35:20.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T10:35:20.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SignupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T06:41:41.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T15:31:44.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T15:31:24.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T14:55:10.839Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+.wrapper {
+  display: flex; //slider bar+ main
+  height: 100vh;
+  overflow: hidden; //no scroll bar
+
+  .sidebar {
+    width: 250px;
+    background-color: #003512;
+    color: white;
+    padding: 20px;
+    transition: width 0.3s ease, padding 0.3s ease;
+    display: flex;
+    flex-direction: column; // vertical column
+    justify-content: space-between; // header-top, logout-bottom
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .logo-img {
+        width: 200px;
+        max-height: 100px;
+        object-fit: contain;
+        transition: width 0.3s ease;
+        margin-bottom: 20px;
+
+        &.small {
+          width: 80px;
+          max-height: 80px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .toggle-btn {
+        position: absolute;
+        top: 20px;
+        right: -15px;
+        background-color: #003512;
+        border: 2px solid #ffffff44;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 2000;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #1b6337cb;
+          transform: scale(1.1);
+        }
+
+        span {
+          display: inline-block;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+
+            //selected color
+            &.active {
+              background-color: #00e95dcb;
+            }
+
+            &:hover {
+              background-color: #1b6337cb;
+            }
+
+            .nav-label {
+              white-space: nowrap;
+              transition: opacity 0.2s ease, visibility 0.2s ease;
+              &.hidden {
+                opacity: 0;
+                visibility: hidden;
+                width: 0;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .logout-section {
+      margin-top: auto;
+      margin-bottom: 20px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-radius 0.3s ease;
+
+      .logout-text {
+        font-size: 14px;
+        color: rgb(241, 232, 232);
+        white-space: nowrap;
+        transition: opacity 0.3s ease, visibility 0.3s ease, width 0.3s ease;
+        overflow: hidden;
+      }
+
+      .logout-icon {
+        background-color: #00e95d;
+        color: #003512;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      &:hover {
+        background-color: #1b6337cb;
+        border-radius: 8px;
+      }
+    }
+
+    &.collapsed {
+      width: 70px;
+      padding: 10px;
+
+      .logo-img {
+        width: 40px;
+      }
+
+      nav ul li a {
+        justify-content: center;
+      }
+
+      .logout-section {
+        justify-content: center;
+
+        .logout-text {
+          opacity: 0;
+          visibility: hidden;
+          color:#f4f4f4;
+          width: 0;
+        }
+      }
+    }
+  }
+
+  .main {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f4f4;
+    transition: margin-left 0.3s ease;
+    overflow: hidden;
+  }
+
+  .logout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+
+    .modal-content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      color: #333;
+
+      p {
+        font-size: 16px;
+      }
+
+      .modal-actions {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        button {
+          padding: 10px 24px;
+          font-size: 16px;
+          font-weight: 600;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .yes-btn {
+          background-color: #28a745;
+          color: white;
+
+          &:hover {
+            background-color: #218838;
+          }
+        }
+
+        .no-btn {
+          background-color: #dc3545;
+          color: white;
+
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

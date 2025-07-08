@@ -1,0 +1,48 @@
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.deps.json
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.dll
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.pdb
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfo.cs
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.dll
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\refint\DigitalDocumentLockCommon.dll
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.pdb
+C:\Users\User\source\repos\New folder\DigitalDocumentLockCommon\obj\Debug\net9.0\ref\DigitalDocumentLockCommon.dll
+D:\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.deps.json
+D:\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.dll
+D:\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.pdb
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.AssemblyReference.cache
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfoInputs.cache
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfo.cs
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.CoreCompileInputs.cache
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.dll
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\refint\DigitalDocumentLockCommon.dll
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.pdb
+D:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\ref\DigitalDocumentLockCommon.dll
+E:\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.deps.json
+E:\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.dll
+E:\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.pdb
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.AssemblyReference.cache
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.GeneratedMSBuildEditorConfig.editorconfig
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfoInputs.cache
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfo.cs
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.CoreCompileInputs.cache
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.dll
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\refint\DigitalDocumentLockCommon.dll
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.pdb
+E:\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\ref\DigitalDocumentLockCommon.dll
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.deps.json
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.dll
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\bin\Debug\net9.0\DigitalDocumentLockCommon.pdb
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.AssemblyReference.cache
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.GeneratedMSBuildEditorConfig.editorconfig
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfoInputs.cache
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.AssemblyInfo.cs
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.csproj.CoreCompileInputs.cache
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.dll
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\refint\DigitalDocumentLockCommon.dll
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\DigitalDocumentLockCommon.pdb
+E:\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net9.0\ref\DigitalDocumentLockCommon.dll
