@@ -1,6 +1,6 @@
 using DigitalDocumentLockCommon.Models;
 using Microsoft.AspNetCore.Http;
-
+using DigitalDocumentLockCommom.DTOs;
 namespace DigitalDocumentLockRepository.Interfaces
 {
     public interface IUserActivityLogRepository

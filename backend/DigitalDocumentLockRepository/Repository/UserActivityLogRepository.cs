@@ -2,6 +2,7 @@ using DigitalDocumentLockCommon.Models;
 using Microsoft.EntityFrameworkCore;
 using DigitalDocumentLockCommon.Db;
 using DigitalDocumentLockRepository.Interfaces;
+using DigitalDocumentLockCommom.DTOs;
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -41,7 +42,7 @@ namespace DigitalDocumentLockRepository.Repositories
                 .ToListAsync();
         }
 
-        // New method: Get recent logs from all users
+        //Get recent logs from all users
         public async Task<List<ActivityLogDto>> GetAllRecentActivitiesAsync(int limit = 10)
         {
             return await _context.UserActivityLogs

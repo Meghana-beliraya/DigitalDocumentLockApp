@@ -8,6 +8,7 @@ using System;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
+using DigitalDocumentLockCommom.DTOs;
 
 namespace DigitalDocumentLockRepository.Repository
 {
@@ -28,9 +29,10 @@ namespace DigitalDocumentLockRepository.Repository
         }
         public async Task<DashboardData> GetDashboardDataAsync()
         {
+            //helps load personalised dashboard data 
             var userIdString = _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            if (!int.TryParse(userIdString, out int userId))
+            if (!int.TryParse(userIdString, out int userId)) // claim jwt strng always string 
             {
                 throw new Exception("Invalid user ID.");
             }
@@ -43,7 +45,7 @@ namespace DigitalDocumentLockRepository.Repository
             var dashboardData = new DashboardData
             {
                 total_file = userFiles.Count,
-                no_of_pdf = userFiles.Count(d => d.FileType.Equals("pdf", StringComparison.OrdinalIgnoreCase)),
+                no_of_pdf = userFiles.Count(d => d.FileType.Equals("pdf", StringComparison.OrdinalIgnoreCase)), // ignore the case-sensitive 
                 no_of_docs = userFiles.Count(d => d.FileType.Equals("docx", StringComparison.OrdinalIgnoreCase)),
                 RecentActivities = (await _activityLogRepository.GetRecentActivitiesAsync(userId, limit: 10)).ToList()
             };

@@ -1,7 +1,7 @@
 using DigitalDocumentLockCommon.Models;
-using DigitalDocumentLockCommon.Dtos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DigitalDocumentLockCommom.DTOs;
 
 public interface IDocumentRepository
 {

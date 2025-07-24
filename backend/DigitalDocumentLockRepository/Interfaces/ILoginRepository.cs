@@ -1,5 +1,5 @@
 ﻿using DigitalDocumentLockCommon.Models;
-using DigitalDocumentLockCommon.Dtos;
+using DigitalDocumentLockCommom.DTOs;
 
 
 namespace DigitalDocumentLockRepository.Interfaces

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using YourNamespace.Repositories;
+using DigitalDocumentLockCommom.DTOs;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

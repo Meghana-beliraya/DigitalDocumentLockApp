@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc; //Controller base
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
-
+using DigitalDocumentLockCommom.DTOs;
 using System.Text; //encoding token genration
 
 namespace DigitalDocumentLockAPI.Controllers;

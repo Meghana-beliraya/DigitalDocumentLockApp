@@ -1,5 +1,6 @@
 using DigitalDocumentLockCommon.Models;
 using System.Threading.Tasks;
+using DigitalDocumentLockCommom.DTOs;
 
 namespace DigitalDocumentLockRepository.Interfaces
 {

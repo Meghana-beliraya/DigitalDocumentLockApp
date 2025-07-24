@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using DigitalDocumentLockCommon.Db;
-using YourNamespace.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using DigitalDocumentLockCommon.Models;
+using DigitalDocumentLockCommom.DTOs;
 
 namespace YourNamespace.Repositories
 {
@@ -11,13 +11,13 @@ namespace YourNamespace.Repositories
     {
         private readonly AppDbContext _context;
         private readonly IWebHostEnvironment _env; //access wwwroot folder
-        private readonly IHttpContextAccessor _httpContextAccessor; //accessing request context
+       // private readonly IHttpContextAccessor _httpContextAccessor; //accessing request context
 
         public ProfileRepository(AppDbContext context, IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
             _env = env;
-            _httpContextAccessor = httpContextAccessor;
+            //_httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<ProfileDto> GetProfileAsync(int userId)

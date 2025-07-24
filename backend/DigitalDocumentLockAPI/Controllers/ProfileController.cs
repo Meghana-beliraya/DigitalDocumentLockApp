@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using YourNamespace.Models;
+
+using DigitalDocumentLockCommom.DTOs;
 using YourNamespace.Repositories;
 
 namespace YourNamespace.Controllers

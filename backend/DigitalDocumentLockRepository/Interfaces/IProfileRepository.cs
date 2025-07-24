@@ -1,7 +1,7 @@
-using YourNamespace.Models;
+
 using DigitalDocumentLockCommon.Models;
 using Microsoft.AspNetCore.Http;
-
+using DigitalDocumentLockCommom.DTOs;
 
 namespace YourNamespace.Repositories
 {

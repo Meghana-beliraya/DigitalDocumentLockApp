@@ -6,10 +6,11 @@ using DigitalDocumentLockRepository.Interfaces;
 using Microsoft.AspNetCore.StaticFiles;    // For FileExtensionContentTypeProvider
 using Microsoft.EntityFrameworkCore;       // For FirstOrDefaultAsync
 using DigitalDocumentLockCommon.Db;
+
 //using System.IO;
 //using System.Threading.Tasks;
 using System;
-using DigitalDocumentLockCommon.DTOs;
+using DigitalDocumentLockCommom.DTOs;
 using System.Collections.Generic;
 using DigitalDocumentLockRepository.Repository;
 using Microsoft.Extensions.Logging;
@@ -43,6 +44,7 @@ public class DocumentController : ControllerBase
     public async Task<IActionResult> Upload([FromForm] DocumentUploadDto dto)
     {
         var userId = GetLoggedInUserId();
+        // root folder for static files(wwwroot fails--> upload folder)
         var uploadsFolder = Path.Combine(_env.WebRootPath ?? "Uploads");
 
         var result = await _repo.UploadAndEncryptDocumentAsync(dto, userId, uploadsFolder);

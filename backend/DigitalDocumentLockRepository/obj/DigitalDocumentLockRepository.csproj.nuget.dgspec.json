@@ -1,36 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj": {}
+    "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj": {}
   },
   "projects": {
-    "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj": {
+    "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
+        "projectUniqueName": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
         "projectName": "DigitalDocumentLockCommon",
-        "projectPath": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
-        "packagesPath": "C:\\Users\\Swomyashree\\.nuget\\packages\\",
-        "outputPath": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\obj\\",
+        "projectPath": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
+        "packagesPath": "C:\\Users\\a2832854\\.nuget\\packages\\",
+        "outputPath": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Swomyashree\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\a2832854\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -43,12 +39,11 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
@@ -60,11 +55,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -83,40 +78,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj": {
+    "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
+        "projectUniqueName": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
         "projectName": "DigitalDocumentLockRepository",
-        "projectPath": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
-        "packagesPath": "C:\\Users\\Swomyashree\\.nuget\\packages\\",
-        "outputPath": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\obj\\",
+        "projectPath": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
+        "packagesPath": "C:\\Users\\a2832854\\.nuget\\packages\\",
+        "outputPath": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Swomyashree\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\a2832854\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj": {
-                "projectPath": "E:\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj"
+              "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj": {
+                "projectPath": "C:\\OneDrive - H&R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj"
               }
             }
           }
@@ -130,12 +121,11 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
@@ -147,17 +137,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -184,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

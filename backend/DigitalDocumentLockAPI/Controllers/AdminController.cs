@@ -1,5 +1,5 @@
 using DigitalDocumentLockCommon.Db;
-using DigitalDocumentLockCommon.Dtos;
+using DigitalDocumentLockCommom.DTOs;
 using DigitalDocumentLockCommon.Models;
 using DigitalDocumentLockRepository.Interfaces;
 using Microsoft.AspNetCore.Mvc;

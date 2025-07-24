@@ -1,5 +1,4 @@
 ﻿using DigitalDocumentLockCommon.Db;
-using DigitalDocumentLockCommon.Dtos;
 using DigitalDocumentLockCommon.Models;
 using DigitalDocumentLockRepository.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-
+using DigitalDocumentLockCommom.DTOs;
 namespace DigitalDocumentLockRepository.Repository
 {
     public class LoginRepository : ILoginRepository

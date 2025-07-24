@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Hosting;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DigitalDocumentLockCommon.Dtos;
 using DigitalDocumentLockRepository.Repository;
 using System.Diagnostics;
 using Microsoft.AspNetCore.StaticFiles;
@@ -14,6 +13,7 @@ using System.IO;
 using System;
 using BCrypt.Net;
 using Microsoft.Extensions.Options;
+using DigitalDocumentLockCommom.DTOs;
 
 public class DocumentRepository : IDocumentRepository
 {
@@ -65,8 +65,8 @@ public class DocumentRepository : IDocumentRepository
     public async Task<List<AdminDocumentDto>> GetAdminDocumentsAsync()
     {
         return await _context.Document
-            .Include(d => d.User)
-            .Where(d => !d.DeleteInd)
+            .Include(d => d.User) // load User entity for each Document
+            .Where(d => !d.DeleteInd) // document should not be soft-deleted 
             .Select(d => new AdminDocumentDto
             {
                 DocumentId = d.DocumentId,
@@ -142,9 +142,10 @@ public class DocumentRepository : IDocumentRepository
         Directory.CreateDirectory(uploadsFolder);
 
         var fileExtension = Path.GetExtension(dto.File.FileName).ToLower();
-        var fileExtensionWithoutDot = fileExtension.TrimStart('.');
-
+        var fileExtensionWithoutDot = fileExtension.TrimStart('.');//store for metadata
+        //unique file names 
         var originalTempPath = Path.Combine(uploadsFolder, Guid.NewGuid() + "_original" + fileExtension);
+        
         var encryptedPath = Path.Combine(uploadsFolder, Guid.NewGuid() + fileExtension);
 
         using (var stream = new FileStream(originalTempPath, FileMode.Create))

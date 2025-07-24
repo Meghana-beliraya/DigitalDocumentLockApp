@@ -1,8 +1,9 @@
-﻿// File: Controllers/DashboardController.cs
+﻿
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using DigitalDocumentLockRepository.Interfaces;
 using DigitalDocumentLockCommon.Models;
+using DigitalDocumentLockCommom.DTOs;
 
 namespace DigitalDocumentLockAPI.Controllers;
 
@@ -17,6 +18,7 @@ public class DashboardController : ControllerBase
     {
         _dashboardService = dashboardService;
     }
+
     [Authorize(Roles = "User")]
     [HttpGet("user")]
     public async Task<IActionResult> UserDashboard()
@@ -28,7 +30,7 @@ public class DashboardController : ControllerBase
         }
         catch (Exception ex)
         {
-            return StatusCode(500, new { message = "An error occurred while fetching dashboard data.", details = ex.Message });
+            return StatusCode(500, new { message = "An error occurred while fetching dashboard data.", details = ex.Message});
         }
     }
 

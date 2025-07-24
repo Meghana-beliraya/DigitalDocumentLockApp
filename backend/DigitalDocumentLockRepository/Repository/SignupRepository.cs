@@ -2,13 +2,12 @@
 using DigitalDocumentLockRepository.Interfaces;
 using DigitalDocumentLockCommon.Db;                // DbContext lives in API project
 using Microsoft.EntityFrameworkCore;
+using DigitalDocumentLockCommom.DTOs;
 //using System;
 
 
 using System.Text.RegularExpressions; // Regex
-//using Microsoft.EntityFrameworkCore; // EF Core queries
-//using DigitalDocumentLockCommon.Db; // AppDbContext
-//using DigitalDocumentLockCommon.Models; //  User model
+
 
 namespace DigitalDocumentLockRepository.Repository;
 

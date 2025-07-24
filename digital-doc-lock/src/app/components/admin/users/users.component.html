@@ -17,8 +17,8 @@
           <td>
             <button
               (click)="onToggleStatus(user)"
-              [ngClass]="{ 'active-btn': user.isActive, 'inactive-btn': !user.isActive }"
-            >
+              [ngClass]="{ 'active-btn': user.isActive, 'inactive-btn': !user.isActive }">
+              
               <i class="fas fa-exchange-alt"></i>
               {{ getStatus(user) }}
             </button>
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <!-- Custom Confirmation Box -->
+  <!--  Confirmation Box -->
   <div class="confirmation-box" *ngIf="showConfirmationBox">
     <div class="confirmation-content">
       <p>{{ confirmationMessage }}</p>

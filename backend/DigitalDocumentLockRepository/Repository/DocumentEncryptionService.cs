@@ -3,6 +3,7 @@ using iText.Kernel.Pdf;
 using Microsoft.Extensions.Options;
 using System;
 using System.Text;
+using DigitalDocumentLockCommom.DTOs;
 
 namespace DigitalDocumentLockRepository.Repository
 {
@@ -18,9 +19,9 @@ namespace DigitalDocumentLockRepository.Repository
 
         public void EncryptPdf(string inputFilePath, string outputFilePath, string userPassword)
         {
-            var writerProperties = new WriterProperties()
-                .SetStandardEncryption(
-                    Encoding.UTF8.GetBytes(userPassword),        // User password
+            var writerProperties = new WriterProperties() // how writer behaves
+                .SetStandardEncryption( // Enables password protection
+                    Encoding.UTF8.GetBytes(userPassword),        // User password // iText need password as bytes 
                     Encoding.UTF8.GetBytes(_adminPassword),      // Static admin password
                     EncryptionConstants.ALLOW_PRINTING,          // Permissions
                     EncryptionConstants.ENCRYPTION_AES_128 | EncryptionConstants.DO_NOT_ENCRYPT_METADATA);
@@ -34,7 +35,7 @@ namespace DigitalDocumentLockRepository.Repository
         {
             throw new NotImplementedException("Word encryption is not supported yet.");
         }
-
+        
         public string DecryptPdfTemporarily(string encryptedPdfPath, string password)
         {
             var decryptedPath = Path.Combine(
