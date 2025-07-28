@@ -6,6 +6,7 @@ using DigitalDocumentLockRepository.Interfaces;
 using Microsoft.AspNetCore.StaticFiles;    // For FileExtensionContentTypeProvider
 using Microsoft.EntityFrameworkCore;       // For FirstOrDefaultAsync
 using DigitalDocumentLockCommon.Db;
+using DigitalDocumentLockRepository.Services;
 
 //using System.IO;
 //using System.Threading.Tasks;
@@ -21,6 +22,7 @@ using Microsoft.Extensions.Logging;
 public class DocumentController : ControllerBase
 {
     private readonly IDocumentRepository _repo;
+    private readonly IDocumentService _documentService;
     private readonly IWebHostEnvironment _env;
     private readonly IUserActivityLogRepository _activityRepo;
     private readonly AppDbContext _context;
@@ -31,6 +33,7 @@ public class DocumentController : ControllerBase
         IWebHostEnvironment env,
         IUserActivityLogRepository activityRepo,
         AppDbContext context,
+        IDocumentService documentService,
         ILogger<DocumentController> logger)
     {
         _repo = repo;
@@ -38,56 +41,63 @@ public class DocumentController : ControllerBase
         _activityRepo = activityRepo;
         _context = context;
         _logger = logger;
+        _documentService = documentService;
     }
 
     [HttpPost("upload")]
     public async Task<IActionResult> Upload([FromForm] DocumentUploadDto dto)
     {
         var userId = GetLoggedInUserId();
-        // root folder for static files(wwwroot fails--> upload folder)
         var uploadsFolder = Path.Combine(_env.WebRootPath ?? "Uploads");
 
-        var result = await _repo.UploadAndEncryptDocumentAsync(dto, userId, uploadsFolder);
+        _logger.LogInformation("User {UserId} is attempting to upload file: {FileName}", userId, dto.File?.FileName);
+
+        var result = await _documentService.UploadAndEncryptDocumentAsync(dto, userId, uploadsFolder);
 
         if (result.Message != "File uploaded successfully!")
+        {
+            _logger.LogWarning("Upload failed for user {UserId}: {Message}", userId, result.Message);
             return BadRequest(new { message = result.Message });
+        }
 
         await _activityRepo.AddLogAsync(userId, $"Uploaded file: {dto.File.FileName}");
+        _logger.LogInformation("User {UserId} successfully uploaded file: {FileName}", userId, dto.File.FileName);
         return Ok(result);
     }
 
     [HttpGet("all")]
-    public async Task<ActionResult<List<DocumentDisplayDto>>> GetAllDocuments()
+    public async Task<IActionResult> GetAllDocumentsWithUser()
     {
-        var documents = await _repo.GetAllDocumentsWithUserAsync();
-        return Ok(documents);
+        _logger.LogInformation("Fetching all documents with associated user data");
+        var docs = await _documentService.GetAllDocumentsWithUserAsync();
+        return Ok(docs);
     }
 
     [HttpGet("my-documents")]
-    [Authorize]
     public async Task<IActionResult> GetMyDocuments()
     {
         var userId = GetLoggedInUserId();
-        var documents = await _repo.GetDocumentsByUserAsync(userId);
+        _logger.LogInformation("User {UserId} requested their documents", userId);
+
+        var documents = await _documentService.GetDocumentsByUserAsync(userId);
         return Ok(documents);
     }
-
 
     [HttpGet("preview/{documentId}")]
     public async Task<IActionResult> PreviewDocument(int documentId)
     {
         var userId = GetLoggedInUserId();
         var isAdmin = User.IsInRole("Admin");
-
         Request.Headers.TryGetValue("x-document-password", out var passwordHeader);
         var passwordToUse = isAdmin ? null : passwordHeader.ToString();
 
+        _logger.LogInformation("User {UserId} attempting to preview document {DocumentId} (Admin: {IsAdmin})", userId, documentId, isAdmin);
 
-
-        var result = await _repo.GetDocumentPreviewAsync(documentId, userId, passwordToUse, isAdmin);
+        var result = await _documentService.GetDocumentPreviewAsync(documentId, userId, passwordToUse, isAdmin);
 
         if (result.ErrorMessage != null)
         {
+            _logger.LogWarning("Preview failed for user {UserId} on document {DocumentId}: {Error}", userId, documentId, result.ErrorMessage);
             return result.StatusCode switch
             {
                 400 => BadRequest(result.ErrorMessage),
@@ -97,19 +107,21 @@ public class DocumentController : ControllerBase
             };
         }
 
+        _logger.LogInformation("Preview successful for document {DocumentId} by user {UserId}", documentId, userId);
         return File(result.FileBytes, result.MimeType, result.FileName);
     }
-
 
     [HttpPost("download/{documentId}")]
     public async Task<IActionResult> DownloadDocument(int documentId, [FromBody] DocumentDownloadRequest request)
     {
         var userId = GetLoggedInUserId();
+        _logger.LogInformation("User {UserId} requested download for document {DocumentId}", userId, documentId);
 
-        var result = await _repo.DownloadDocumentAsync(documentId, userId, request?.Password);
+        var result = await _documentService.DownloadDocumentAsync(documentId, userId, request?.Password);
 
         if (result.ErrorMessage != null)
         {
+            _logger.LogWarning("Download failed for user {UserId} on document {DocumentId}: {Error}", userId, documentId, result.ErrorMessage);
             return result.StatusCode switch
             {
                 400 => BadRequest(result.ErrorMessage),
@@ -120,20 +132,23 @@ public class DocumentController : ControllerBase
         }
 
         await _activityRepo.AddLogAsync(userId, $"Downloaded document: {result.FileName}");
-
+        _logger.LogInformation("User {UserId} successfully downloaded document: {FileName}", userId, result.FileName);
         return File(result.FileBytes, result.MimeType, result.FileName);
     }
-
-
 
     [HttpPut("soft-delete/{documentId}")]
     public async Task<IActionResult> SoftDeleteDocument(int documentId)
     {
         var email = User.FindFirst(ClaimTypes.Name)?.Value;
         if (string.IsNullOrEmpty(email))
+        {
+            _logger.LogWarning("Soft delete failed due to missing email claim.");
             return Unauthorized(new { message = "Email claim not found" });
+        }
 
-        var result = await _repo.SoftDeleteDocumentAsync(documentId, email);
+        _logger.LogInformation("Soft delete requested for document {DocumentId} by user {Email}", documentId, email);
+
+        var result = await _documentService.SoftDeleteDocumentAsync(documentId, email);
 
         return result.StatusCode switch
         {
@@ -150,9 +165,9 @@ public class DocumentController : ControllerBase
         var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
         if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
         {
+            _logger.LogError("User ID claim not found or invalid.");
             throw new UnauthorizedAccessException("User ID not found in token.");
         }
         return userId;
     }
-
 }

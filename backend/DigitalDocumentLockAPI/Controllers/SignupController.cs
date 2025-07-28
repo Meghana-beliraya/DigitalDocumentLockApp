@@ -2,11 +2,12 @@
 using DigitalDocumentLockRepository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.RegularExpressions; //validating email and password formats
+using Serilog;
 
 namespace DigitalDocumentLockAPI.Controllers;
 
 [Route("api/[controller]")]
-[ApiController] // Automatic model validation and strc response
+[ApiController]
 public class SignupController : ControllerBase
 {
     private readonly ISignupRepository _repo;
@@ -16,10 +17,14 @@ public class SignupController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Signup([FromBody] User user)
     {
+        Log.Information("Signup attempt for user: {Email}", user.Email);
+
         var result = await _repo.SignupAsync(user);
 
         if (!result.Success)
         {
+            Log.Warning("Signup failed for {Email}: {Message}", user.Email, result.Message);
+
             return result.StatusCode switch
             {
                 400 => BadRequest(new { success = false, message = result.Message }),
@@ -29,9 +34,7 @@ public class SignupController : ControllerBase
             };
         }
 
+        Log.Information("Signup successful for {Email}", user.Email);
         return Ok(new { success = true, message = result.Message });
     }
-
-
-
 }

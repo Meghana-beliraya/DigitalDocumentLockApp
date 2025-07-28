@@ -1,0 +1,54 @@
+2025-07-28 21:39:05.007 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 21:39:09.613 +05:30 [INF] HTTP GET /api/admin/documents responded 401 in 36.1965 ms
+2025-07-28 21:39:10.708 +05:30 [INF] Admin requested all documents.
+2025-07-28 21:39:10.710 +05:30 [ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 38
+2025-07-28 21:39:10.728 +05:30 [ERR] HTTP GET /api/admin/documents responded 500 in 685.2501 ms
+2025-07-28 21:39:15.687 +05:30 [INF] Login attempt for email: meghanabeliraya@gmail.com
+2025-07-28 21:39:16.555 +05:30 [INF] User logged in: 2
+2025-07-28 21:39:16.691 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 1066.7293 ms
+2025-07-28 21:39:16.740 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 21:39:16.835 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 21:39:16.845 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 126.4446 ms
+2025-07-28 21:39:18.377 +05:30 [INF] Admin requested all documents.
+2025-07-28 21:39:18.381 +05:30 [ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 38
+2025-07-28 21:39:18.386 +05:30 [ERR] HTTP GET /api/admin/documents responded 500 in 11.9863 ms
+[2025-07-28 21:51:53 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 21:52:22 INF] Login attempt for email: meghanabeliraya@gmail.com
+[2025-07-28 21:52:23 INF] User logged in: 2
+[2025-07-28 21:52:24 INF] HTTP POST /api/Login/userLogin responded 200 in 1340.7725 ms
+[2025-07-28 21:52:24 INF] Fetching admin dashboard data.
+[2025-07-28 21:52:24 INF] Successfully fetched admin dashboard data.
+[2025-07-28 21:52:24 INF] HTTP GET /api/dashboard/admin/data responded 200 in 112.0223 ms
+[2025-07-28 21:52:25 INF] Admin requested user summaries.
+[2025-07-28 21:52:25 INF] Retrieved 3 user summaries.
+[2025-07-28 21:52:25 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 68.1679 ms
+[2025-07-28 21:52:31 INF] Admin requested toggle for user with ID: 1
+[2025-07-28 21:52:31 INF] User with ID 1 status updated to false.
+[2025-07-28 21:52:31 INF] HTTP PUT /api/Admin/toggle-user-status/1 responded 200 in 37.6367 ms
+[2025-07-28 21:52:32 INF] Admin requested all documents.
+[2025-07-28 21:52:32 ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 38
+[2025-07-28 21:52:32 ERR] HTTP GET /api/admin/documents responded 500 in 21.8258 ms
+[2025-07-28 21:52:33 INF] Admin requested user summaries.
+[2025-07-28 21:52:33 INF] Retrieved 3 user summaries.
+[2025-07-28 21:52:33 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 12.8281 ms
+[2025-07-28 21:52:46 INF] Admin requested toggle for user with ID: 1
+[2025-07-28 21:52:46 INF] User with ID 1 status updated to true.
+[2025-07-28 21:52:46 INF] HTTP PUT /api/Admin/toggle-user-status/1 responded 200 in 14.7598 ms
+[2025-07-28 21:52:59 INF] Admin requested user summaries.
+[2025-07-28 21:52:59 INF] Retrieved 3 user summaries.
+[2025-07-28 21:52:59 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 19.6427 ms
+[2025-07-28 21:53:37 INF] Admin requested toggle for user with ID: 1
+[2025-07-28 21:53:37 INF] User with ID 1 status updated to false.
+[2025-07-28 21:53:37 INF] HTTP PUT /api/Admin/toggle-user-status/1 responded 200 in 25.2124 ms
+[2025-07-28 21:53:50 INF] Fetching admin dashboard data.
+[2025-07-28 21:53:51 INF] Successfully fetched admin dashboard data.
+[2025-07-28 21:53:51 INF] HTTP GET /api/dashboard/admin/data responded 200 in 52.8103 ms
+[2025-07-28 21:53:52 INF] Admin requested user summaries.
+[2025-07-28 21:53:52 INF] Retrieved 3 user summaries.
+[2025-07-28 21:53:52 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 17.2472 ms

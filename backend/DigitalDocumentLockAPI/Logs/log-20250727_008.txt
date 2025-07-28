@@ -1,0 +1,2 @@
+2025-07-27 22:23:50.396 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-27 22:24:06 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;

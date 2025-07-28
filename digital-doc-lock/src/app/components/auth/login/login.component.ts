@@ -56,17 +56,18 @@ export class LoginComponent {
       next: (response: any) => {
         this.loading = false;
 
-        if (response && response.token) {
-          this.authService.saveToken(response.token);
+        const accessToken = response.token;
+        const refreshToken = response.refreshToken;
+
+        if (accessToken && refreshToken) {
+          this.authService.saveToken(accessToken);
+          this.authService.saveRefreshToken(refreshToken);
           localStorage.setItem('isAdmin', response.isAdmin.toString());
 
           this.errorMessage = '';
 
-          if (response.isAdmin) {
-            this.router.navigate(['/admin/dashboard']);
-          } else {
-            this.router.navigate(['/user/dashboard']);
-          }
+          const targetRoute = response.isAdmin ? '/admin/dashboard' : '/user/dashboard';
+          this.router.navigate([targetRoute]);
         } else {
           this.errorMessage = 'Invalid response from server.';
         }
@@ -75,12 +76,8 @@ export class LoginComponent {
         this.loading = false;
         console.error('Login failed:', err);
 
-        if (err.status === 403 && err.error?.message) {
-          this.errorMessage = err.error.message;
-        } else if (err.status === 401 && err.error?.message) {
-          this.errorMessage = err.error.message;
-        } else if (err.error?.message) {
-          this.errorMessage = err.error.message;
+        if (err.status === 403 || err.status === 401) {
+          this.errorMessage = err.error?.message || 'Authentication failed.';
         } else {
           this.errorMessage = 'Login failed. Please try again later.';
         }

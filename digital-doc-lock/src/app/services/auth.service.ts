@@ -1,12 +1,14 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, throwError, of } from 'rxjs';
+import { catchError, switchMap } from 'rxjs/operators';
 import { jwtDecode } from 'jwt-decode';
 
 interface MyJwtPayload {
   userId: string;
   email: string;
+  exp: number; // UNIX timestamp
 }
 
 @Injectable({
@@ -30,78 +32,96 @@ export class AuthService {
     return this.http.post(`${this.baseUrl}/Login/userLogin`, credentials);
   }
 
-  // Check if user is authenticated
-  isAuthenticated(): boolean {
-    return isPlatformBrowser(this.platformId) && !!localStorage.getItem('authToken');
-  }
-
-  // Save the JWT Token
+  // Save tokens
   saveToken(token: string): void {
     if (isPlatformBrowser(this.platformId)) {
       localStorage.setItem('authToken', token);
     }
   }
 
-  // Get the JWT Token
+  saveRefreshToken(refreshToken: string): void {
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('refreshToken', refreshToken);
+    }
+  }
+
+  // Get tokens
   getToken(): string | null {
     return isPlatformBrowser(this.platformId) ? localStorage.getItem('authToken') : null;
+  }
+
+  getRefreshToken(): string | null {
+    return isPlatformBrowser(this.platformId) ? localStorage.getItem('refreshToken') : null;
+  }
+
+  // Remove tokens
+  clearTokens(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.removeItem('authToken');
+      localStorage.removeItem('refreshToken');
+    }
+  }
+
+  // Check if user is authenticated
+  isAuthenticated(): boolean {
+    const token = this.getToken();
+    if (!token) return false;
+
+    try {
+      const decoded: MyJwtPayload = jwtDecode(token);
+      const isExpired = decoded.exp < Math.floor(Date.now() / 1000);
+      return !isExpired;
+    } catch {
+      return false;
+    }
+  }
+
+  // Refresh token
+  refreshToken(): Observable<any> {
+    const refreshToken = this.getRefreshToken();
+    if (!refreshToken) return throwError(() => new Error('No refresh token'));
+
+    return this.http.post(`${this.baseUrl}/Login/refresh`, { refreshToken }).pipe(
+      switchMap((response: any) => {
+        this.saveToken(response.token);
+        this.saveRefreshToken(response.refreshToken);
+        return of(response);
+      }),
+      catchError(err => {
+        this.clearTokens();
+        return throwError(() => err);
+      })
+    );
   }
 
   // Logout the user
   logout(): Observable<any> {
     const token = this.getToken();
-
-    if (!token) {
-      return new Observable(observer => {
-        if (isPlatformBrowser(this.platformId)) {
-          localStorage.removeItem('authToken');
-        }
-        observer.complete();
-      });
-    }
-
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
+    const headers = this.createAuthHeaders();
 
     return new Observable(observer => {
       this.http.post(`${this.baseUrl}/Login/logout`, {}, { headers }).subscribe({
         next: (res) => {
-          if (isPlatformBrowser(this.platformId)) {
-            localStorage.removeItem('authToken');
-          }
+          this.clearTokens();
           observer.next(res);
           observer.complete();
         },
         error: (err) => {
-          console.error('Logout API failed:', err);
-          if (isPlatformBrowser(this.platformId)) {
-            localStorage.removeItem('authToken');
-          }
+          console.error('Logout failed:', err);
+          this.clearTokens();
           observer.error(err);
         }
       });
     });
   }
 
-  // Get user profile
-  getProfile() {
-    const token = this.getToken();
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-
-    return this.http.get(`${this.baseUrl}/user/profile`, { headers });
+  // Profile methods
+  getProfile(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/user/profile`, { headers: this.createAuthHeaders() });
   }
 
-  // Update user profile
-  updateProfile(profileData: any) {
-    const token = this.getToken();
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-
-    return this.http.put(`${this.baseUrl}/user/profile`, profileData, { headers });
+  updateProfile(profileData: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/user/profile`, profileData, { headers: this.createAuthHeaders() });
   }
 
   // Save user info locally
@@ -126,8 +146,6 @@ export class AuthService {
 
     try {
       const decoded: any = jwtDecode(token);
-      console.log('Decoded token:', decoded);
-
       const userId = decoded["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"];
       return userId || null;
     } catch (error) {
@@ -136,9 +154,16 @@ export class AuthService {
     }
   }
 
+  // Helper: Create Auth Headers
+  private createAuthHeaders(): HttpHeaders {
+    const token = this.getToken();
+    return new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+  }
+
   storeUserProfile(firstName: string, email: string): void {
   localStorage.setItem('firstName', firstName);
   localStorage.setItem('email', email);
 }
-
 }

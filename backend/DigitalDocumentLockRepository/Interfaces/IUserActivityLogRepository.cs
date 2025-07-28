@@ -9,5 +9,8 @@ namespace DigitalDocumentLockRepository.Interfaces
         Task<List<string>> GetRecentActivitiesAsync(int userId, int limit = 10);
         Task<List<ActivityLogDto>> GetAllRecentActivitiesAsync(int limit = 30);
 
+        Task LogUserActivityAsync(UserActivityLog log);
+
+
     }
 }

@@ -10,10 +10,26 @@ using Microsoft.IdentityModel.Tokens;
 using YourNamespace.Repositories;
 using DigitalDocumentLockCommom.DTOs;
 using System.Text;
+using DigitalDocumentLockRepository.Services;
+using Serilog;
+using AutoMapper;
+using DigitalDocumentLockAPI.Mapping;
+using DigitalDocumentLockRepository.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//  Add configuration for Document Encryption Settings
+//  Setup Serilog
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.Debug()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog(); // Replace default logging
+
+//  Configure Document Encryption Settings
 builder.Services.Configure<DocumentEncryptionSettings>(
     builder.Configuration.GetSection("DocumentEncryption"));
 
@@ -24,16 +40,28 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         b => b.MigrationsAssembly("DigitalDocumentLockCommon")
     ));
 
-builder.Services.AddScoped<ISignupRepository, SignupRepository>();
-builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+
+
+
+
+builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
-builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IDashboardService, DashboardService>();
 builder.Services.AddScoped<IUserActivityLogRepository, UserActivityLogRepository>();
+builder.Services.AddScoped<IDocumentService, DocumentService>();
+builder.Services.AddScoped<IEncryptionService, DocumentEncryptionService>();
 
-// Inject the updated encryption service
+//  Inject the updated encryption service
 builder.Services.AddScoped<DocumentEncryptionService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+builder.Services.AddScoped<ISignUpService, SignUpService>();
+builder.Services.AddScoped<ISignupRepository, SignupRepository>(); // Optional if directly using SignupRepo
+
+
 
 //  JWT Authentication Configuration 
 var jwtKey = builder.Configuration["Jwt:Key"];
@@ -66,7 +94,15 @@ builder.Services.AddAuthorization();
 //  Controllers & Swagger 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Version = "1.0.0",
+        Title = "Digital Document Lock API",
+        Description = "API for Digital Document Lock System"
+    });
+});
 
 //  CORS Policy
 builder.Services.AddCors(options =>
@@ -80,11 +116,12 @@ builder.Services.AddCors(options =>
 
 // Debug Connection String
 var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
-Console.WriteLine("DEBUG: Connection string is: " + connStr);
+Log.Information("DEBUG: Connection string is: {ConnectionString}", connStr);
 
 //  Build App
 var app = builder.Build();
 
+//  Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -95,8 +132,12 @@ app.UseRouting();
 app.UseStaticFiles();
 app.UseCors("AllowAngular");
 
+//  Serilog Middleware for HTTP request logging
+app.UseSerilogRequestLogging();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.Run();

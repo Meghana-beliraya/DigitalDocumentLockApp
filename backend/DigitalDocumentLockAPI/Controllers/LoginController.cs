@@ -1,76 +1,89 @@
 ﻿using DigitalDocumentLockCommon.Models;
 using DigitalDocumentLockRepository.Interfaces;
-using Microsoft.AspNetCore.Mvc; //Controller base
-//using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using DigitalDocumentLockCommom.DTOs;
-using System.Text; //encoding token genration
+using System.Text;
+using Microsoft.Extensions.Logging;
 
-namespace DigitalDocumentLockAPI.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class LoginController : ControllerBase
+namespace DigitalDocumentLockAPI.Controllers
 {
-    private readonly ILoginRepository _repo; 
-    private readonly IConfiguration _config;
-    private readonly IUserActivityLogRepository _activityLogRepo;
-
-
-    public LoginController(ILoginRepository repo, IConfiguration config, IUserActivityLogRepository activityLogRepo)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class LoginController : ControllerBase
     {
-        _repo = repo;
-        _config = config;
-        _activityLogRepo = activityLogRepo;
-    }
+        private readonly ILoginService _LoginService;
+        private readonly IConfiguration _config;
+        private readonly IUserActivityLogRepository _activityLogRepo;
+        private readonly ILogger<LoginController> _logger;
 
-    [HttpPost("userLogin")]
-    public async Task<IActionResult> Login([FromBody] UserLoginDto loginDto)
-    {
-        var result = await _repo.LoginAsync(loginDto.Email, loginDto.Password);
 
-        if (!result.Success)
+        public LoginController(
+            ILoginService LoginService,
+            IConfiguration config,
+            IUserActivityLogRepository activityLogRepo,
+            ILogger<LoginController> logger)
         {
-            if (result.Message == "Invalid email or password.")
-            {
-                return Unauthorized(new { message = result.Message });
-            }
-
-            if (result.Message == "Your account has been deactivated or blocked.")
-            {
-                return StatusCode(StatusCodes.Status403Forbidden, new { message = result.Message });
-            }
-
-            return BadRequest(new { message = result.Message });
+            _LoginService = LoginService;
+            _config = config;
+            _activityLogRepo = activityLogRepo;
+            _logger = logger;
         }
 
-        await _activityLogRepo.AddLogAsync(result.Data!.UserId, "User logged in.");
-
-        return Ok(result.Data);
-    }
-
-
-
-    [Authorize]
-    [HttpPost("logout")]
-    public async Task<IActionResult> Logout()
-    {
-        var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        if (!int.TryParse(userIdStr, out int userId))
+        [HttpPost("userLogin")]
+        public async Task<IActionResult> Login([FromBody] UserLoginDto loginDto)
         {
-            return Unauthorized(new { message = "User ID not found in token." });
+            _logger.LogInformation("Login attempt for email: {Email}", loginDto.Email);
+
+            var result = await _LoginService.LoginAsync(loginDto.Email, loginDto.Password);
+
+            if (!result.Success)
+            {
+                _logger.LogWarning("Login failed for email: {Email}, Reason: {Reason}", loginDto.Email, result.Message);
+
+                if (result.Message == "Invalid email or password.")
+                {
+                    return Unauthorized(new { message = result.Message });
+                }
+
+                if (result.Message == "Your account has been deactivated or blocked.")
+                {
+                    return StatusCode(StatusCodes.Status403Forbidden, new { message = result.Message });
+                }
+
+                return BadRequest(new { message = result.Message });
+            }
+
+            _logger.LogInformation("User logged in: {UserId}", result.Data!.UserId);
+            await _activityLogRepo.AddLogAsync(result.Data.UserId, "User logged in.");
+
+            return Ok(result.Data);
         }
 
-        var result = await _repo.LogoutAsync(userId);
+        [Authorize]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-        if (!result.Success)
-            return StatusCode(StatusCodes.Status500InternalServerError, new { message = result.Message, error = result.Error });
+            if (!int.TryParse(userIdStr, out int userId))
+            {
+                _logger.LogWarning("Logout failed: Invalid User ID in token.");
+                return Unauthorized(new { message = "User ID not found in token." });
+            }
 
-        return Ok(new { message = result.Message });
+            var result = await _LoginService.LogoutAsync(userId);
+
+            if (!result.Success)
+            {
+                _logger.LogError("Logout failed for user {UserId}: {Error}", userId, result.Error);
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = result.Message, error = result.Error });
+            }
+
+            _logger.LogInformation("User {UserId} logged out.", userId);
+            return Ok(new { message = result.Message });
+        }
     }
-
-
-
 }

@@ -35,7 +35,6 @@ public class User
     [Column("isActive")] // Updated to match DB
     public bool IsActive { get; set; } = true;
 
-  
-
+ 
 
 }

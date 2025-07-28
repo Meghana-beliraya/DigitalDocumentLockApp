@@ -1,0 +1,336 @@
+2025-07-28 12:42:15.870 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 12:42:28.529 +05:30 [INF] HTTP GET /api/profile/me responded 401 in 26.1702 ms
+2025-07-28 12:42:28.529 +05:30 [INF] HTTP GET /api/dashboard/user responded 401 in 26.1400 ms
+2025-07-28 12:42:29.493 +05:30 [INF] Fetching user dashboard data.
+2025-07-28 12:42:29.494 +05:30 [INF] Fetching profile for userId: 4
+2025-07-28 12:42:29.885 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-28 12:42:29.897 +05:30 [INF] Profile retrieved successfully for userId: 4
+2025-07-28 12:42:29.918 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 1023.3824 ms
+2025-07-28 12:42:29.918 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 1023.3785 ms
+2025-07-28 12:42:41.896 +05:30 [INF] User 4 logged out.
+2025-07-28 12:42:41.907 +05:30 [INF] HTTP POST /api/Login/logout responded 200 in 180.8180 ms
+2025-07-28 12:45:29.268 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-28 12:45:29.618 +05:30 [INF] User logged in: 1
+2025-07-28 12:45:29.641 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 407.4679 ms
+2025-07-28 12:45:29.669 +05:30 [INF] Fetching user dashboard data.
+2025-07-28 12:45:29.670 +05:30 [INF] Fetching profile for userId: 1
+2025-07-28 12:45:29.690 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-28 12:45:29.693 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 25.7059 ms
+2025-07-28 12:45:29.720 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-28 12:45:29.722 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 55.3624 ms
+2025-07-28 12:45:40.168 +05:30 [INF] User 1 requested their documents
+2025-07-28 12:45:40.181 +05:30 [ERR] HTTP GET /api/document/my-documents responded 500 in 27.2768 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-28 12:45:40.215 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-28 12:55:35.880 +05:30 [INF] HTTP GET /api/document/my-documents responded 401 in 1.3975 ms
+2025-07-28 12:55:38.663 +05:30 [INF] User 1 requested their documents
+2025-07-28 12:55:38.709 +05:30 [ERR] HTTP GET /api/document/my-documents responded 500 in 48.7240 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-28 12:55:38.735 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-28 13:13:40.273 +05:30 [INF] HTTP GET /api/document/my-documents responded 401 in 0.3562 ms
+2025-07-28 13:13:43.014 +05:30 [INF] User 1 requested their documents
+2025-07-28 13:13:43.048 +05:30 [ERR] HTTP GET /api/document/my-documents responded 500 in 39.0848 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-28 13:13:43.062 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-28 13:56:37.210 +05:30 [INF] HTTP GET /api/document/my-documents responded 401 in 0.4157 ms
+2025-07-28 13:56:39.955 +05:30 [INF] User 1 requested their documents
+2025-07-28 13:56:39.989 +05:30 [ERR] HTTP GET /api/document/my-documents responded 500 in 35.3332 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-28 13:56:40.005 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-28 13:58:54.953 +05:30 [INF] Fetching user dashboard data.
+2025-07-28 13:58:54.954 +05:30 [INF] Fetching profile for userId: 1
+2025-07-28 13:58:54.968 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-28 13:58:54.969 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-28 13:58:54.970 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 20.3657 ms
+2025-07-28 13:58:54.970 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 20.4353 ms
+2025-07-28 13:58:57.295 +05:30 [INF] User 1 requested their documents
+2025-07-28 13:58:57.301 +05:30 [ERR] HTTP GET /api/document/my-documents responded 500 in 9.2706 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-28 13:58:57.316 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-07-28 14:16:29 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 14:16:36 INF] HTTP GET /api/document/my-documents responded 401 in 34.2744 ms
+[2025-07-28 14:16:39 INF] User 1 requested their documents
+[2025-07-28 14:16:40 ERR] HTTP GET /api/document/my-documents responded 500 in 989.5702 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2025-07-28 14:16:40 ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-07-28 14:16:41 INF] User 1 logged out.
+[2025-07-28 14:16:41 INF] HTTP POST /api/Login/logout responded 200 in 176.1988 ms
+[2025-07-28 14:16:44 INF] Login attempt for email: sura@gmail.com
+[2025-07-28 14:16:44 INF] User logged in: 1
+[2025-07-28 14:16:44 INF] HTTP POST /api/Login/userLogin responded 200 in 407.7059 ms
+[2025-07-28 14:16:44 INF] Fetching profile for userId: 1
+[2025-07-28 14:16:44 INF] Fetching user dashboard data.
+[2025-07-28 14:16:44 INF] Successfully fetched user dashboard data.
+[2025-07-28 14:16:44 INF] Profile retrieved successfully for userId: 1
+[2025-07-28 14:16:44 INF] HTTP GET /api/profile/me responded 200 in 39.2394 ms
+[2025-07-28 14:16:44 INF] HTTP GET /api/dashboard/user responded 200 in 40.2889 ms
+[2025-07-28 14:16:46 INF] User 1 requested their documents
+[2025-07-28 14:16:46 ERR] HTTP GET /api/document/my-documents responded 500 in 10.1505 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2025-07-28 14:16:46 ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 60
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

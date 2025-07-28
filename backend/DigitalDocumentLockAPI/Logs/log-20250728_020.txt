@@ -1,0 +1,79 @@
+2025-07-28 22:10:12.455 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 22:10:20.756 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:10:21.132 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:10:21.175 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 954.9820 ms
+2025-07-28 22:10:30.402 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-28 22:10:30.878 +05:30 [WRN] Login failed for email: sura@gmail.com, Reason: Your account has been deactivated or blocked.
+2025-07-28 22:10:30.888 +05:30 [INF] HTTP POST /api/Login/userLogin responded 403 in 526.8218 ms
+2025-07-28 22:10:34.735 +05:30 [INF] Login attempt for email: meghanabeliraya@gmail.com
+2025-07-28 22:10:35.041 +05:30 [INF] User logged in: 2
+2025-07-28 22:10:35.143 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 414.8097 ms
+2025-07-28 22:10:35.181 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 22:10:35.256 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 22:10:35.262 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 92.4363 ms
+2025-07-28 22:10:36.661 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:10:36.670 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:10:36.673 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 18.0896 ms
+2025-07-28 22:10:39.496 +05:30 [INF] Admin requested toggle for user with ID: 1
+2025-07-28 22:10:39.521 +05:30 [INF] User with ID 1 status updated to true.
+2025-07-28 22:10:39.525 +05:30 [INF] HTTP PUT /api/Admin/toggle-user-status/1 responded 200 in 41.7390 ms
+2025-07-28 22:10:43.513 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 22:10:43.531 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 22:10:43.533 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 22.9262 ms
+2025-07-28 22:10:44.609 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:10:44.622 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:10:44.625 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 19.1287 ms
+2025-07-28 22:10:53.677 +05:30 [INF] Admin requested toggle for user with ID: 3
+2025-07-28 22:10:53.693 +05:30 [INF] User with ID 3 status updated to false.
+2025-07-28 22:10:53.696 +05:30 [INF] HTTP PUT /api/Admin/toggle-user-status/3 responded 200 in 20.4358 ms
+2025-07-28 22:11:04.356 +05:30 [INF] Admin requested toggle for user with ID: 4
+2025-07-28 22:11:04.376 +05:30 [INF] User with ID 4 status updated to true.
+2025-07-28 22:11:04.379 +05:30 [INF] HTTP PUT /api/Admin/toggle-user-status/4 responded 200 in 26.0716 ms
+2025-07-28 22:11:27.807 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 22:11:27.825 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 22:11:27.828 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 24.7231 ms
+2025-07-28 22:11:29.453 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:11:29.463 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:11:29.465 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 13.7658 ms
+2025-07-28 22:11:51.417 +05:30 [INF] Admin requested toggle for user with ID: 4
+2025-07-28 22:11:51.440 +05:30 [INF] User with ID 4 status updated to false.
+2025-07-28 22:11:51.443 +05:30 [INF] HTTP PUT /api/Admin/toggle-user-status/4 responded 200 in 27.8487 ms
+2025-07-28 22:14:51.147 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 22:14:51.164 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 22:14:51.166 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 22.0993 ms
+2025-07-28 22:14:52.169 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:14:52.177 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:14:52.179 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 13.5847 ms
+2025-07-28 22:20:54.717 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:20:54.738 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:20:54.742 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 26.4277 ms
+2025-07-28 22:21:31.009 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:21:31.022 +05:30 [INF] Retrieved 3 user summaries.
+2025-07-28 22:21:31.024 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 17.2472 ms
+2025-07-28 22:24:35.477 +05:30 [INF] Admin requested user summaries.
+2025-07-28 22:24:35.487 +05:30 [INF] Retrieved 2 user summaries.
+2025-07-28 22:24:35.490 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 15.1439 ms
+[2025-07-28 22:39:55 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 22:40:03 INF] Admin requested user summaries.
+[2025-07-28 22:40:04 INF] Retrieved 2 user summaries.
+[2025-07-28 22:40:04 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 1039.2641 ms
+[2025-07-28 22:40:06 INF] Admin requested all documents.
+[2025-07-28 22:40:06 ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 38
+[2025-07-28 22:40:06 ERR] HTTP GET /api/admin/documents responded 500 in 65.1766 ms
+[2025-07-28 22:40:08 INF] Fetching admin dashboard data.
+[2025-07-28 22:40:08 INF] Successfully fetched admin dashboard data.
+[2025-07-28 22:40:08 INF] HTTP GET /api/dashboard/admin/data responded 200 in 107.5617 ms
+[2025-07-28 22:40:10 INF] Admin requested user summaries.
+[2025-07-28 22:40:10 INF] Retrieved 2 user summaries.
+[2025-07-28 22:40:10 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 18.6559 ms
+[2025-07-28 22:40:15 INF] Admin requested toggle for user with ID: 1
+[2025-07-28 22:40:15 INF] User with ID 1 status updated to false.
+[2025-07-28 22:40:15 INF] HTTP PUT /api/Admin/toggle-user-status/1 responded 200 in 130.9530 ms
+[2025-07-28 22:40:16 INF] Fetching admin dashboard data.
+[2025-07-28 22:40:16 INF] Successfully fetched admin dashboard data.
+[2025-07-28 22:40:16 INF] HTTP GET /api/dashboard/admin/data responded 200 in 15.3589 ms
+[2025-07-28 22:40:18 INF] Admin requested user summaries.
+[2025-07-28 22:40:18 INF] Retrieved 2 user summaries.
+[2025-07-28 22:40:18 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 16.4517 ms

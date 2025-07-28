@@ -57,5 +57,11 @@ namespace DigitalDocumentLockRepository.Repositories
                 })
                 .ToListAsync();
         }
+
+        public async Task LogUserActivityAsync(UserActivityLog log)
+        {
+            await _context.UserActivityLogs.AddAsync(log);
+            await _context.SaveChangesAsync();
+        }
     }
 }

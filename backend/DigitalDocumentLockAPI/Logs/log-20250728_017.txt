@@ -1,0 +1,30 @@
+2025-07-28 21:35:10.405 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 21:35:24.536 +05:30 [INF] Login attempt for email: meghanabeliraya@gmail.com
+2025-07-28 21:35:25.788 +05:30 [INF] User logged in: 2
+2025-07-28 21:35:25.933 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 1583.8616 ms
+2025-07-28 21:35:26.014 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 21:35:26.130 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 21:35:26.147 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 163.5731 ms
+2025-07-28 21:35:30.995 +05:30 [INF] Admin requested all documents.
+2025-07-28 21:35:30.997 +05:30 [ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 40
+2025-07-28 21:35:31.016 +05:30 [ERR] HTTP GET /api/admin/documents responded 500 in 78.1303 ms
+[2025-07-28 21:39:05 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 21:39:09 INF] HTTP GET /api/admin/documents responded 401 in 36.1965 ms
+[2025-07-28 21:39:10 INF] Admin requested all documents.
+[2025-07-28 21:39:10 ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 38
+[2025-07-28 21:39:10 ERR] HTTP GET /api/admin/documents responded 500 in 685.2501 ms
+[2025-07-28 21:39:15 INF] Login attempt for email: meghanabeliraya@gmail.com
+[2025-07-28 21:39:16 INF] User logged in: 2
+[2025-07-28 21:39:16 INF] HTTP POST /api/Login/userLogin responded 200 in 1066.7293 ms
+[2025-07-28 21:39:16 INF] Fetching admin dashboard data.
+[2025-07-28 21:39:16 INF] Successfully fetched admin dashboard data.
+[2025-07-28 21:39:16 INF] HTTP GET /api/dashboard/admin/data responded 200 in 126.4446 ms
+[2025-07-28 21:39:18 INF] Admin requested all documents.
+[2025-07-28 21:39:18 ERR] Error occurred while retrieving documents for admin.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockAPI.Controllers.AdminController.GetAllDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\AdminController.cs:line 38
+[2025-07-28 21:39:18 ERR] HTTP GET /api/admin/documents responded 500 in 11.9863 ms

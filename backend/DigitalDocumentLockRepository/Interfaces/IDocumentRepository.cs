@@ -1,37 +1,22 @@
 using DigitalDocumentLockCommon.Models;
+using DigitalDocumentLockCommom.DTOs;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using DigitalDocumentLockCommom.DTOs;
 
-public interface IDocumentRepository
+namespace DigitalDocumentLockRepository.Interfaces
 {
-    Task<Document> UploadDocumentAsync(Document doc);
-    Task<List<Document>> GetDocumentsByUserIdAsync(int userId);
+    public interface IDocumentRepository
+    {
+        Task<List<Document>> GetDocumentsByUserAsync(int userId);
+        Task<List<Document>> GetAdminDocumentsAsync();
+        Task<List<UserSummaryDto>> GetAllUserSummariesAsync();
+        Task<List<Document>> GetAllDocumentsWithUserAsync();
+        Task<List<Document>> GetUserDocumentsAsync(int userId);
+        Task<int> GetActiveDocumentCountAsync();
+        Task<int> GetTodayUploadedDocumentCountAsync();
+        Task SaveDocumentAsync(Document document);
+        Task<Document?> GetDocumentByIdAsync(int documentId);
 
-    // Admin-side document listing
-    Task<List<AdminDocumentDto>> GetAdminDocumentsAsync();
-
-    // Admin-side user summary
-    Task<List<UserSummaryDto>> GetAllUserSummariesAsync();
-
-    // Toggle user status (active/inactive)
-    Task<UserStatusUpdateDto?> ToggleUserStatusAsync(int userId);
-
-    // Upload + Encrypt document
-    Task<UploadResultDto> UploadAndEncryptDocumentAsync(DocumentUploadDto dto, int userId, string uploadsRootPath);
-
-    // View/Preview a document (requires password unless admin)
-    Task<DocumentPreviewDto> GetDocumentPreviewAsync(int documentId, int userId, string? passwordHeader, bool isAdmin = false);
-
-    // Download a document (admin: password optional, user: password required)
-    Task<DocumentDownloadDto> DownloadDocumentAsync(int documentId, int userId, string? password = null, bool isAdmin = false);
-
-    // Soft-delete a document (by user or admin)
-    Task<DocumentOperationResultDto> SoftDeleteDocumentAsync(int documentId, string userEmail);
-
-    // For displaying documents with uploader info (admin dashboard)
-    Task<List<DocumentDisplayDto>> GetAllDocumentsWithUserAsync();
-
-    // For displaying a specific user's documents
-    Task<List<DocumentDisplayDto>> GetDocumentsByUserAsync(int userId);
+        
+    }
 }

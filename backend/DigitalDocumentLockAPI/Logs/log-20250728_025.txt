@@ -1,0 +1,56 @@
+2025-07-28 23:05:07.390 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 23:05:22.458 +05:30 [INF] HTTP GET /api/admin/documents responded 401 in 30.1209 ms
+2025-07-28 23:05:23.587 +05:30 [INF] Admin requested all documents.
+2025-07-28 23:05:23.589 +05:30 [ERR] DocumentService is null.
+2025-07-28 23:05:23.603 +05:30 [ERR] HTTP GET /api/admin/documents responded 500 in 784.8935 ms
+2025-07-28 23:06:26.025 +05:30 [INF] Login attempt for email: meghanabeliraya@gmail.com
+2025-07-28 23:06:26.843 +05:30 [INF] User logged in: 2
+2025-07-28 23:06:26.964 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 986.2599 ms
+2025-07-28 23:06:27.017 +05:30 [INF] Fetching admin dashboard data.
+2025-07-28 23:06:27.105 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-28 23:06:27.115 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 123.6750 ms
+2025-07-28 23:06:28.480 +05:30 [INF] Admin requested all documents.
+2025-07-28 23:06:28.484 +05:30 [ERR] DocumentService is null.
+2025-07-28 23:06:28.487 +05:30 [ERR] HTTP GET /api/admin/documents responded 500 in 11.6217 ms
+[2025-07-28 23:10:32 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 23:10:38 INF] HTTP GET /api/admin/documents responded 401 in 28.9928 ms
+[2025-07-28 23:10:38 INF] Admin requested all documents.
+[2025-07-28 23:10:39 INF] HTTP GET /api/admin/documents responded 200 in 969.4482 ms
+[2025-07-28 23:10:46 INF] Login attempt for email: meghanabeliraya@gmail.com
+[2025-07-28 23:10:46 INF] User logged in: 2
+[2025-07-28 23:10:46 INF] HTTP POST /api/Login/userLogin responded 200 in 512.0819 ms
+[2025-07-28 23:10:46 INF] Fetching admin dashboard data.
+[2025-07-28 23:10:46 INF] Successfully fetched admin dashboard data.
+[2025-07-28 23:10:46 INF] HTTP GET /api/dashboard/admin/data responded 200 in 77.2272 ms
+[2025-07-28 23:10:48 INF] Admin requested user summaries.
+[2025-07-28 23:10:48 INF] Retrieved 2 user summaries.
+[2025-07-28 23:10:48 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 27.5880 ms
+[2025-07-28 23:10:50 INF] Admin requested all documents.
+[2025-07-28 23:10:50 INF] HTTP GET /api/admin/documents responded 200 in 13.6085 ms
+[2025-07-28 23:10:54 INF] User 2 attempting to preview document 12 (Admin: true)
+[2025-07-28 23:10:54 INF] Preview successful for document 12 by user 2
+[2025-07-28 23:10:54 INF] HTTP GET /api/document/preview/12 responded 200 in 217.7691 ms
+[2025-07-28 23:10:58 INF] User 2 attempting to preview document 15 (Admin: true)
+[2025-07-28 23:10:58 WRN] Preview failed for user 2 on document 15: Document or file not found
+[2025-07-28 23:10:58 INF] HTTP GET /api/document/preview/15 responded 404 in 15.1373 ms
+[2025-07-28 23:11:03 INF] User 2 attempting to preview document 16 (Admin: true)
+[2025-07-28 23:11:03 INF] Preview successful for document 16 by user 2
+[2025-07-28 23:11:03 INF] HTTP GET /api/document/preview/16 responded 200 in 39.8083 ms
+[2025-07-28 23:11:08 INF] User 2 attempting to preview document 14 (Admin: true)
+[2025-07-28 23:11:08 INF] Preview successful for document 14 by user 2
+[2025-07-28 23:11:08 INF] HTTP GET /api/document/preview/14 responded 200 in 19.6760 ms
+[2025-07-28 23:11:11 INF] Admin requested user summaries.
+[2025-07-28 23:11:11 INF] Retrieved 2 user summaries.
+[2025-07-28 23:11:11 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 12.3407 ms
+[2025-07-28 23:11:15 INF] Admin requested toggle for user with ID: 4
+[2025-07-28 23:11:15 INF] User with ID 4 status updated to false.
+[2025-07-28 23:11:15 INF] HTTP PUT /api/Admin/toggle-user-status/4 responded 200 in 35.6491 ms
+[2025-07-28 23:11:21 INF] Fetching admin dashboard data.
+[2025-07-28 23:11:21 INF] Successfully fetched admin dashboard data.
+[2025-07-28 23:11:21 INF] HTTP GET /api/dashboard/admin/data responded 200 in 14.8319 ms
+[2025-07-28 23:11:22 INF] Admin requested user summaries.
+[2025-07-28 23:11:22 INF] Retrieved 2 user summaries.
+[2025-07-28 23:11:22 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 13.4050 ms
+[2025-07-28 23:11:25 INF] Admin requested toggle for user with ID: 4
+[2025-07-28 23:11:25 INF] User with ID 4 status updated to true.
+[2025-07-28 23:11:25 INF] HTTP PUT /api/Admin/toggle-user-status/4 responded 200 in 11.2766 ms

@@ -1,99 +1,59 @@
 ﻿using DigitalDocumentLockCommon.Models;
-using DigitalDocumentLockRepository.Interfaces;
-using DigitalDocumentLockCommon.Db;                // DbContext lives in API project
-using Microsoft.EntityFrameworkCore;
 using DigitalDocumentLockCommom.DTOs;
-//using System;
+using DigitalDocumentLockRepository.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using DigitalDocumentLockCommon.Db;
 
-
-using System.Text.RegularExpressions; // Regex
-
-
-namespace DigitalDocumentLockRepository.Repository;
-
-public class SignupRepository : ISignupRepository
+namespace DigitalDocumentLockRepository.Repository
 {
-    private readonly AppDbContext _ctx;
-
-    public SignupRepository(AppDbContext ctx) => _ctx = ctx;
-    
-    public async Task<User?> GetByEmailAsync(string email) =>
-        await _ctx.Users.FirstOrDefaultAsync(u =>
-            EF.Functions.Collate(u.Email, "Latin1_General_CS_AS") == email);
-    
-    public async Task<ResultDto> SignupAsync(User user)
+    public class SignupRepository : ISignupRepository
     {
-        if (string.IsNullOrWhiteSpace(user.FirstName) ||
-            string.IsNullOrWhiteSpace(user.Email) ||
-            string.IsNullOrWhiteSpace(user.Password))
+        private readonly AppDbContext _context;
+
+        public SignupRepository(AppDbContext context)
         {
-            return new ResultDto
-            {
-                Success = false,
-                Message = "All fields are required.",
-                StatusCode = 400
-            };
+            _context = context;
         }
 
-        if (!Regex.IsMatch(user.Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+        public async Task<User?> GetByEmailAsync(string email)
         {
-            return new ResultDto
-            {
-                Success = false,
-                Message = "Invalid email format.",
-                StatusCode = 400
-            };
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == email);
         }
 
-        var pwdOk = Regex.IsMatch(user.Password,
-            @"^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$");
-
-        if (!pwdOk)
+        public async Task<ResultDto> SignupAsync(User user)
         {
-            return new ResultDto
-            {
-                Success = false,
-                Message = "Weak password.",
-                StatusCode = 400
-            };
-        }
-
-        try
-        {
-            //existing email check
-            var existingUser = await _ctx.Users.FirstOrDefaultAsync(u => u.Email == user.Email);
-            if (existingUser != null)
-            {
-                return new ResultDto
-                {
-                    Success = false,
-                    Message = "Email already exists.",
-                    StatusCode = 409
-                };
-            }
-
-            // Hash the password
-            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-            await _ctx.Users.AddAsync(user);
-            await _ctx.SaveChangesAsync();
-
+            await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync(); // Make sure to persist the new user
             return new ResultDto
             {
                 Success = true,
-                Message = "User registered successfully.",
-                StatusCode = 200
+                Message = "User registered successfully"
             };
         }
-        catch (Exception ex)
+
+        public async Task<User?> GetUserByIdAsync(int userId)
         {
-            return new ResultDto
-            {
-                Success = false,
-                Message = "An unexpected error occurred. Please try again later.",
-                Error = ex.Message,
-                StatusCode = 500
-            };
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Id == userId);
+        }
+
+        public async Task UpdateUserAsync(User user)
+        {
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync(); // Persist the update
+        }
+
+        public async Task<int> GetActiveUserCountAsync()
+        {
+            return await _context.Users
+                .CountAsync(u => u.IsActive);
+        }
+
+        public async Task<User?> GetActiveUserByEmailAsync(string email)
+        {
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Email == email && u.IsActive);
         }
     }
-
 }

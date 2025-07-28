@@ -1,0 +1,13 @@
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\bin\Debug\net8.0\DigitalDocumentLockCommon.deps.json
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\bin\Debug\net8.0\DigitalDocumentLockCommon.dll
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\bin\Debug\net8.0\DigitalDocumentLockCommon.pdb
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.csproj.AssemblyReference.cache
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.AssemblyInfoInputs.cache
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.AssemblyInfo.cs
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.csproj.CoreCompileInputs.cache
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.sourcelink.json
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.dll
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\refint\DigitalDocumentLockCommon.dll
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\DigitalDocumentLockCommon.pdb
+C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockCommon\obj\Debug\net8.0\ref\DigitalDocumentLockCommon.dll

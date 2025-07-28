@@ -4,7 +4,7 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 
 import { routes } from './app.routes';
-import { authInterceptor } from './interceptors/auth.interceptor'; 
+import { AuthInterceptor } from './interceptors/auth.interceptor'; // ✅ Should be a function, not a class
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -12,8 +12,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideHttpClient(
-      withFetch(),         
-      withInterceptors([authInterceptor]) // custom token interceptor
+      withFetch(),
+      withInterceptors([AuthInterceptor]) // ✅ Function-based interceptor (HttpInterceptorFn)
     )
   ]
 };

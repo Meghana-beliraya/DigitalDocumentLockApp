@@ -1,0 +1,88 @@
+2025-07-28 20:23:13.952 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 20:26:10.658 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-28 20:26:11.839 +05:30 [INF] User logged in: 1
+2025-07-28 20:26:11.965 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 1451.8930 ms
+2025-07-28 20:26:12.067 +05:30 [INF] Fetching user dashboard data.
+2025-07-28 20:26:12.073 +05:30 [INF] Fetching profile for userId: 1
+2025-07-28 20:26:12.109 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-28 20:26:12.115 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 110.0769 ms
+2025-07-28 20:26:12.130 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-28 20:26:12.139 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 134.2017 ms
+2025-07-28 20:26:14.329 +05:30 [INF] User 1 requested their documents
+2025-07-28 20:26:14.344 +05:30 [ERR] HTTP GET /api/document/my-documents responded 500 in 70.9790 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 57
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 57
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-28 20:26:14.370 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DigitalDocumentLockRepository.Services.DocumentService.<>c.<GetDocumentsByUserAsync>b__6_0(Document d) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 57
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at DigitalDocumentLockRepository.Services.DocumentService.GetDocumentsByUserAsync(Int32 userId) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\DocumentService.cs:line 57
+   at DocumentController.GetMyDocuments() in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\DocumentController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-07-28 20:32:42 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 20:32:47 INF] User 1 logged out.
+[2025-07-28 20:32:47 INF] HTTP POST /api/Login/logout responded 200 in 1001.9208 ms
+[2025-07-28 20:32:54 INF] Login attempt for email: meghanabeliraya@gmail.com
+[2025-07-28 20:32:55 INF] User logged in: 2
+[2025-07-28 20:32:55 INF] HTTP POST /api/Login/userLogin responded 200 in 611.2047 ms
+[2025-07-28 20:32:55 INF] Fetching admin dashboard data.
+[2025-07-28 20:32:55 INF] Successfully fetched admin dashboard data.
+[2025-07-28 20:32:55 INF] HTTP GET /api/dashboard/admin/data responded 200 in 128.0112 ms
+[2025-07-28 20:32:58 INF] Admin requested user summaries.
+[2025-07-28 20:32:58 INF] Retrieved 3 user summaries.
+[2025-07-28 20:32:58 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 29.4561 ms
+[2025-07-28 20:33:02 INF] Admin requested toggle for user with ID: 1
+[2025-07-28 20:33:02 INF] User with ID 1 status updated to false.
+[2025-07-28 20:33:02 INF] HTTP PUT /api/Admin/toggle-user-status/1 responded 200 in 42.5758 ms
+[2025-07-28 20:33:11 INF] Admin requested toggle for user with ID: 3
+[2025-07-28 20:33:11 INF] User with ID 3 status updated to false.
+[2025-07-28 20:33:11 INF] HTTP PUT /api/Admin/toggle-user-status/3 responded 200 in 15.0941 ms
+[2025-07-28 20:33:14 INF] Admin requested toggle for user with ID: 4
+[2025-07-28 20:33:14 INF] User with ID 4 status updated to false.
+[2025-07-28 20:33:14 INF] HTTP PUT /api/Admin/toggle-user-status/4 responded 200 in 13.3718 ms
+[2025-07-28 20:33:19 INF] Login attempt for email: meghanabeliraya@gmail.com
+[2025-07-28 20:33:20 INF] User logged in: 2
+[2025-07-28 20:33:20 INF] HTTP POST /api/Login/userLogin responded 200 in 286.0174 ms
+[2025-07-28 20:33:20 INF] Fetching admin dashboard data.
+[2025-07-28 20:33:20 INF] Successfully fetched admin dashboard data.
+[2025-07-28 20:33:20 INF] HTTP GET /api/dashboard/admin/data responded 200 in 20.4834 ms
+[2025-07-28 20:33:22 INF] Admin requested user summaries.
+[2025-07-28 20:33:22 INF] Retrieved 3 user summaries.
+[2025-07-28 20:33:22 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 8.8896 ms
+[2025-07-28 20:33:37 INF] Admin requested user summaries.
+[2025-07-28 20:33:37 INF] Retrieved 3 user summaries.
+[2025-07-28 20:33:37 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 10.7257 ms
+[2025-07-28 20:34:01 INF] Admin requested all documents.
+[2025-07-28 20:34:01 INF] Retrieved 0 documents for admin.
+[2025-07-28 20:34:01 INF] HTTP GET /api/admin/documents responded 200 in 40.7987 ms

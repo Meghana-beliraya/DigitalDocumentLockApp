@@ -1,0 +1,45 @@
+2025-07-28 10:56:01.177 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-28 10:57:09.747 +05:30 [INF] Login attempt for email: sinchana09@gmail.com
+2025-07-28 10:57:10.616 +05:30 [WRN] Login failed for email: sinchana09@gmail.com, Reason: Invalid email or password.
+2025-07-28 10:57:10.641 +05:30 [INF] HTTP POST /api/Login/userLogin responded 401 in 1044.1762 ms
+2025-07-28 10:57:20.713 +05:30 [INF] Login attempt for email: sinchana09@gmail.com
+2025-07-28 10:57:20.731 +05:30 [WRN] Login failed for email: sinchana09@gmail.com, Reason: Invalid email or password.
+2025-07-28 10:57:20.735 +05:30 [INF] HTTP POST /api/Login/userLogin responded 401 in 25.4300 ms
+2025-07-28 10:58:24.966 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-28 10:58:25.356 +05:30 [INF] User logged in: 1
+2025-07-28 10:58:25.464 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 502.5022 ms
+2025-07-28 10:58:25.554 +05:30 [INF] Fetching profile for userId: 1
+2025-07-28 10:58:25.591 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-28 10:58:25.597 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 92.9423 ms
+2025-07-28 10:58:25.626 +05:30 [INF] Fetching user dashboard data.
+2025-07-28 10:58:25.690 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-28 10:58:25.698 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 194.7771 ms
+2025-07-28 10:58:28.687 +05:30 [INF] User 1 logged out.
+2025-07-28 10:58:28.690 +05:30 [INF] HTTP POST /api/Login/logout responded 200 in 25.4580 ms
+2025-07-28 10:58:55.757 +05:30 [INF] Login attempt for email: thriveni07@gmail.com
+2025-07-28 10:58:55.895 +05:30 [WRN] Login failed for email: thriveni07@gmail.com, Reason: Invalid email or password.
+2025-07-28 10:58:55.898 +05:30 [INF] HTTP POST /api/Login/userLogin responded 401 in 141.3843 ms
+2025-07-28 11:00:02.853 +05:30 [INF] Login attempt for email: thriveni07@gmail.com
+2025-07-28 11:00:03.005 +05:30 [WRN] Login failed for email: thriveni07@gmail.com, Reason: Invalid email or password.
+2025-07-28 11:00:03.008 +05:30 [INF] HTTP POST /api/Login/userLogin responded 401 in 155.7688 ms
+[2025-07-28 11:24:39 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-28 11:24:52 INF] Login attempt for email: sura@gmail.com
+[2025-07-28 11:24:53 INF] User logged in: 1
+[2025-07-28 11:24:53 INF] HTTP POST /api/Login/userLogin responded 200 in 1462.2471 ms
+[2025-07-28 11:24:53 INF] Fetching profile for userId: 1
+[2025-07-28 11:24:53 INF] Profile retrieved successfully for userId: 1
+[2025-07-28 11:24:53 INF] HTTP GET /api/profile/me responded 200 in 102.5060 ms
+[2025-07-28 11:24:53 INF] Fetching user dashboard data.
+[2025-07-28 11:24:53 INF] Successfully fetched user dashboard data.
+[2025-07-28 11:24:53 INF] HTTP GET /api/dashboard/user responded 200 in 215.5638 ms
+[2025-07-28 11:24:56 INF] User 1 logged out.
+[2025-07-28 11:24:56 INF] HTTP POST /api/Login/logout responded 200 in 37.2572 ms
+[2025-07-28 11:25:11 INF] Login attempt for email: thriveni07@gmail.com
+[2025-07-28 11:25:11 INF] User logged in: 4
+[2025-07-28 11:25:11 INF] HTTP POST /api/Login/userLogin responded 200 in 299.9446 ms
+[2025-07-28 11:25:11 INF] Fetching user dashboard data.
+[2025-07-28 11:25:11 INF] Fetching profile for userId: 4
+[2025-07-28 11:25:11 INF] Profile retrieved successfully for userId: 4
+[2025-07-28 11:25:11 INF] HTTP GET /api/profile/me responded 200 in 18.8276 ms
+[2025-07-28 11:25:11 INF] Successfully fetched user dashboard data.
+[2025-07-28 11:25:11 INF] HTTP GET /api/dashboard/user responded 200 in 43.4994 ms
