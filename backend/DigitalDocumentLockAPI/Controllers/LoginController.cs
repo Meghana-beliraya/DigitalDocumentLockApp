@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using DigitalDocumentLockCommom.DTOs;
 using System.Text;
 using Microsoft.Extensions.Logging;
+using DigitalDocumentLockRepository.Services;
 
 namespace DigitalDocumentLockAPI.Controllers
 {
@@ -17,19 +18,24 @@ namespace DigitalDocumentLockAPI.Controllers
         private readonly ILoginService _LoginService;
         private readonly IConfiguration _config;
         private readonly IUserActivityLogRepository _activityLogRepo;
+        private readonly IUserActivityLogService _activityLogService;
         private readonly ILogger<LoginController> _logger;
+        private readonly IUserActivityLogService _userActivityLogService;
 
 
         public LoginController(
             ILoginService LoginService,
             IConfiguration config,
             IUserActivityLogRepository activityLogRepo,
-            ILogger<LoginController> logger)
+            IUserActivityLogService userActivityLogService,
+
+        ILogger<LoginController> logger)
         {
             _LoginService = LoginService;
             _config = config;
             _activityLogRepo = activityLogRepo;
             _logger = logger;
+            _userActivityLogService = userActivityLogService;
         }
 
         [HttpPost("userLogin")]
@@ -57,7 +63,7 @@ namespace DigitalDocumentLockAPI.Controllers
             }
 
             _logger.LogInformation("User logged in: {UserId}", result.Data!.UserId);
-            await _activityLogRepo.AddLogAsync(result.Data.UserId, "User logged in.");
+            await _userActivityLogService.LogUserActivityAsync(result.Data.UserId, "User logged in.");
 
             return Ok(result.Data);
         }

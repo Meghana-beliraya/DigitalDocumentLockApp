@@ -1,22 +1,14 @@
 ﻿using DigitalDocumentLockCommon.Models;
 using DigitalDocumentLockCommom.DTOs;
+using DigitalDocumentLockRepository.Interfaces;
 
-namespace DigitalDocumentLockRepository.Interfaces;
-
-public interface ISignupRepository
+namespace DigitalDocumentLockRepository.Interfaces
 {
-    Task<User?> GetByEmailAsync(string email);
-    Task<ResultDto> SignupAsync(User user);
-
-    Task<User?> GetUserByIdAsync(int userId);
-    Task UpdateUserAsync(User user);
-
-    //Task UpdateProfileImageAsync(int userId, string imageUrl);
-
-
-    Task<int> GetActiveUserCountAsync();
-
-    Task<User?> GetActiveUserByEmailAsync(string email);
-
-
+    public interface ISignupRepository : IGenericRepository<User>
+    {
+        Task<User?> GetByEmailAsync(string email);
+        Task<User?> GetActiveUserByEmailAsync(string email);
+        Task<ResultDto> SignupAsync(User user); // Optional to move to service later
+        Task<int> GetActiveUserCountAsync();
+    }
 }

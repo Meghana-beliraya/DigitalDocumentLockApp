@@ -15,6 +15,7 @@ using Serilog;
 using AutoMapper;
 using DigitalDocumentLockAPI.Mapping;
 using DigitalDocumentLockRepository.UnitOfWork;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,10 +58,10 @@ builder.Services.AddScoped<IEncryptionService, DocumentEncryptionService>();
 builder.Services.AddScoped<DocumentEncryptionService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-
-builder.Services.AddScoped<ISignUpService, SignUpService>();
-builder.Services.AddScoped<ISignupRepository, SignupRepository>(); // Optional if directly using SignupRepo
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<ISignupRepository, SignupRepository>();
+builder.Services.AddScoped<ISignUpService, SignUpService>(); // Optional if directly using SignupRepo
+builder.Services.AddScoped<IUserActivityLogService, UserActivityLogService>();
 
 
 //  JWT Authentication Configuration 

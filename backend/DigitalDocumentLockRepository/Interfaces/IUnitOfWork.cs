@@ -5,9 +5,11 @@ namespace DigitalDocumentLockRepository.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        ISignupRepository Signup { get; }
-        IDocumentRepository DocumentRepository { get; }
-        Task<int> CompleteAsync(); // Calls DbContext.SaveChangesAsync
-        void Dispose();
+        ISignupRepository Users { get; }
+        IDocumentRepository Document { get; } // Add other repositories as needed
+
+        IUserActivityLogRepository UserActivityLogs { get; }
+
+        Task<int> CompleteAsync(); // Save all changes
     }
 }

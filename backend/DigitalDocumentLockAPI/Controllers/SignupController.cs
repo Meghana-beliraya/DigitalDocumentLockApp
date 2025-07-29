@@ -1,8 +1,10 @@
 ﻿using DigitalDocumentLockCommon.Models;
-using DigitalDocumentLockRepository.Interfaces;
+using DigitalDocumentLockRepository.Services;
+using DigitalDocumentLockCommom.DTOs;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.RegularExpressions; //validating email and password formats
+using System.Text.RegularExpressions; // If doing validation in controller
 using Serilog;
+using DigitalDocumentLockRepository.Interfaces;
 
 namespace DigitalDocumentLockAPI.Controllers;
 
@@ -10,16 +12,19 @@ namespace DigitalDocumentLockAPI.Controllers;
 [ApiController]
 public class SignupController : ControllerBase
 {
-    private readonly ISignupRepository _repo;
+    private readonly ISignUpService _signUpService;
 
-    public SignupController(ISignupRepository repo) => _repo = repo;
+    public SignupController(ISignUpService signUpService)
+    {
+        _signUpService = signUpService;
+    }
 
     [HttpPost]
     public async Task<IActionResult> Signup([FromBody] User user)
     {
         Log.Information("Signup attempt for user: {Email}", user.Email);
 
-        var result = await _repo.SignupAsync(user);
+        var result = await _signUpService.SignupAsync(user);
 
         if (!result.Success)
         {

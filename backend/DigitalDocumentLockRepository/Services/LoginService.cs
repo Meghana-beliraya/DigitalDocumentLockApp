@@ -9,6 +9,8 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using DigitalDocumentLockCommom.DTOs;
+using DigitalDocumentLockRepository.UnitOfWork;
+using System.Diagnostics;
 
 namespace DigitalDocumentLockRepository.Services
 {
@@ -17,13 +19,16 @@ namespace DigitalDocumentLockRepository.Services
         private readonly AppDbContext _context;
         private readonly IConfiguration _config;
         private readonly IUserActivityLogRepository _activityRepository;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUserActivityLogService _userActivityLogService;
 
 
-        public LoginService(AppDbContext context, IConfiguration config, IUserActivityLogRepository activityRepository)
+        public LoginService(AppDbContext context, IConfiguration config, IUserActivityLogRepository activityRepository, IUnitOfWork unitOfWork)
         {
             _context = context;
             _config = config;
             _activityRepository = activityRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<LoginResultDto> LoginAsync(string email, string password)
@@ -103,14 +108,9 @@ namespace DigitalDocumentLockRepository.Services
         {
             try
             {
-                var log = new UserActivityLog
-                {
-                    UserId = userId,
-                    Activity = "User logged out.",
-                    ActivityDate = DateTime.UtcNow
-                };
-
-                await _activityRepository.LogUserActivityAsync(log);
+                // Call the service method with userId and activity string
+                await _unitOfWork.UserActivityLogs.LogUserActivityAsync(userId, "User logged out.");
+                await _unitOfWork.CompleteAsync();
 
                 return new ResultDto
                 {
@@ -128,9 +128,5 @@ namespace DigitalDocumentLockRepository.Services
                 };
             }
         }
-
-
     }
-
-
 }

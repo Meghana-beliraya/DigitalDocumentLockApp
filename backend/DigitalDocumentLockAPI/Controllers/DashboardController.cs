@@ -24,6 +24,7 @@ public class DashboardController : ControllerBase
 
     [Authorize(Roles = "User")]
     [HttpGet("user")]
+
     public async Task<IActionResult> UserDashboard()
     {
         try

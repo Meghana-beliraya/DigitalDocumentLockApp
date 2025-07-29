@@ -28,7 +28,7 @@ namespace DigitalDocumentLockRepository.Services
 
         public async Task<ProfileDto?> GetProfileAsync(int userId)
         {
-            var user = await _signupRepository.GetUserByIdAsync(userId);
+            var user = await _signupRepository.GetByIdAsync(userId);
             if (user == null) return null;
 
             return new ProfileDto
@@ -45,7 +45,7 @@ namespace DigitalDocumentLockRepository.Services
         {
             try
             {
-                var user = await _signupRepository.GetUserByIdAsync(userId);
+                var user = await _signupRepository.GetByIdAsync(userId);
                 if (user == null)
                 {
                     return new ResultDto { Success = false, Message = "User not found." };
@@ -64,7 +64,7 @@ namespace DigitalDocumentLockRepository.Services
                                 ? BCrypt.Net.BCrypt.HashPassword(request.NewPassword)
                                 : user.Password;
 
-                await _signupRepository.UpdateUserAsync(user);
+                await _signupRepository.UpdateAsync(user);
 
                 return new ResultDto { Success = true, Message = "Profile updated successfully." };
             }
@@ -133,7 +133,7 @@ namespace DigitalDocumentLockRepository.Services
 
         public async Task<ResultDto> UpdateProfileImageAsync(int userId, string imageUrl)
         {
-            var user = await _signupRepository.GetUserByIdAsync(userId);
+            var user = await _signupRepository.GetByIdAsync(userId);
             if (user == null)
             {
                 return new ResultDto
@@ -145,7 +145,7 @@ namespace DigitalDocumentLockRepository.Services
 
             user.ProfileImageUrl = imageUrl;
 
-            await _signupRepository.UpdateUserAsync(user);
+            await _signupRepository.UpdateAsync(user);
 
             return new ResultDto
             {

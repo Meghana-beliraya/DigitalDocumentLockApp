@@ -3,27 +3,26 @@ using DigitalDocumentLockCommon.Models;
 using DigitalDocumentLockRepository.Interfaces;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Options;
-using System.Diagnostics;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using DigitalDocumentLockRepository.UnitOfWork;
+
 namespace DigitalDocumentLockRepository.Services
 {
     public class DocumentService : IDocumentService
     {
-        private readonly IDocumentRepository _documentRepository;
-        private readonly ISignupRepository _signupRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IEncryptionService _encryptionService;
         private readonly string _adminPassword;
         private readonly ILogger<DocumentService> _logger;
-
+        private readonly IDocumentRepository _repository;
         public DocumentService(
-            IDocumentRepository documentRepository,
-            ISignupRepository signupRepository,
+            IUnitOfWork unitOfWork,
             IEncryptionService encryptionService,
             ILogger<DocumentService> logger,
             IOptions<DocumentEncryptionSettings> encryptionSettings)
         {
-            _documentRepository = documentRepository;
-            _signupRepository = signupRepository;
+            _unitOfWork = unitOfWork;
             _encryptionService = encryptionService;
             _adminPassword = encryptionSettings.Value.AdminPassword;
             _logger = logger;
@@ -31,7 +30,7 @@ namespace DigitalDocumentLockRepository.Services
 
         public async Task<List<DocumentDisplayDto>> GetAllDocumentsWithUserAsync()
         {
-            var documents = await _documentRepository.GetAllDocumentsWithUserAsync();
+            var documents = await _unitOfWork.Document.GetAllDocumentsWithUserAsync();
             return documents.Select(d => new DocumentDisplayDto
             {
                 DocumentId = d.DocumentId,
@@ -44,10 +43,9 @@ namespace DigitalDocumentLockRepository.Services
             }).ToList();
         }
 
-
         public async Task<List<AdminDocumentDto>> GetAdminDocumentsAsync()
         {
-            var documents = await _documentRepository.GetAdminDocumentsAsync() ?? new List<Document>();
+            var documents = await _unitOfWork.Document.GetAdminDocumentsAsync() ?? new List<Document>();
 
             return documents.Select(d => new AdminDocumentDto
             {
@@ -58,11 +56,9 @@ namespace DigitalDocumentLockRepository.Services
             }).ToList();
         }
 
-
-
         public async Task<List<DocumentDisplayDto>> GetDocumentsByUserAsync(int userId)
         {
-            var documents = await _documentRepository.GetDocumentsByUserAsync(userId);
+            var documents = await _unitOfWork.Document.GetDocumentsByUserAsync(userId);
             return documents.Select(d => new DocumentDisplayDto
             {
                 DocumentId = d.DocumentId,
@@ -74,7 +70,6 @@ namespace DigitalDocumentLockRepository.Services
                 FileType = d.FileType
             }).ToList();
         }
-
 
         public async Task<UploadResultDto> UploadAndEncryptDocumentAsync(DocumentUploadDto dto, int userId, string uploadsFolder)
         {
@@ -129,7 +124,8 @@ namespace DigitalDocumentLockRepository.Services
                 DeleteInd = false
             };
 
-            await _documentRepository.SaveDocumentAsync(document);
+            await _unitOfWork.Document.SaveDocumentAsync(document);
+            await _unitOfWork.CompleteAsync();
 
             return new UploadResultDto
             {
@@ -140,7 +136,7 @@ namespace DigitalDocumentLockRepository.Services
 
         public async Task<DocumentPreviewDto> GetDocumentPreviewAsync(int documentId, int userId, string? passwordHeader, bool isAdmin = false)
         {
-            var document = await _documentRepository.GetDocumentByIdAsync(documentId);
+            var document = await _unitOfWork.Document.GetDocumentByIdAsync(documentId);
             if (document == null || !File.Exists(document.FilePath))
                 return new DocumentPreviewDto { ErrorMessage = "Document or file not found", StatusCode = 404 };
 
@@ -206,7 +202,7 @@ namespace DigitalDocumentLockRepository.Services
 
         public async Task<DocumentDownloadDto> DownloadDocumentAsync(int documentId, int userId, string? password, bool isAdmin = false)
         {
-            var document = await _documentRepository.GetDocumentByIdAsync(documentId);
+            var document = await _unitOfWork.Document.GetDocumentByIdAndUserAsync(documentId, userId);
             if (document == null)
                 return new DocumentDownloadDto { ErrorMessage = "Document not found", StatusCode = 404 };
 
@@ -238,11 +234,11 @@ namespace DigitalDocumentLockRepository.Services
 
         public async Task<DocumentOperationResultDto> SoftDeleteDocumentAsync(int documentId, string userEmail)
         {
-            var document = await _documentRepository.GetDocumentByIdAsync(documentId);
+            var document = await _unitOfWork.Document.GetDocumentByIdAsync(documentId);
             if (document == null)
                 return new DocumentOperationResultDto { Message = "Document not found", StatusCode = 404 };
 
-            var user = await _signupRepository.GetActiveUserByEmailAsync(userEmail);
+            var user = await _unitOfWork.Users.GetActiveUserByEmailAsync(userEmail);
             if (user == null)
                 return new DocumentOperationResultDto { Message = "User not found or inactive", StatusCode = 401 };
 
@@ -250,7 +246,8 @@ namespace DigitalDocumentLockRepository.Services
                 return new DocumentOperationResultDto { Message = "Unauthorized", StatusCode = 403 };
 
             document.DeleteInd = true;
-            await _documentRepository.SaveDocumentAsync(document);
+            await _unitOfWork.Document.SaveDocumentAsync(document);
+            await _unitOfWork.CompleteAsync();
 
             return new DocumentOperationResultDto
             {

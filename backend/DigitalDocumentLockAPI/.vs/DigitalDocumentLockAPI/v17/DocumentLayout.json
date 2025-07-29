@@ -3,99 +3,148 @@
   "WorkspaceRootPath": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\dashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\activitylogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iuseractivitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\useractivitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iuseractivitylogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\signupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\usersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\signuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\admindocumentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\userstatusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\isignupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\isignuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\documentencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\idocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\signuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\isignupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\signupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\useractivityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\db\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\usersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\userstatusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\models\\useractivitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\isignuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\models\\useractivitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\profileimagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\db\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\admindocumentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -107,53 +156,16 @@
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\documentpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\activitylogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\dashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\loginresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\updateprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\uploadresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\repository\\useractivitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\interfaces\\iuseractivitylogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\digitaldocumentlockrepository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -164,9 +176,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockapi\\digitaldocumentlockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DED8CB3E-FA5B-465D-BD6E-F6568351E41E}|DigitalDocumentLockAPI.csproj|solutionrelative:digitaldocumentlockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1744EB5-40F3-47C5-A6F3-88E59F40D16C}|..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockrepository\\services\\documentencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -180,9 +189,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\documentuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\profileimagerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAF1FC5-6AB0-4D8F-9379-803DA736C271}|..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj|c:\\onedrive - h\u0026r block ltd\\desktop\\project\\digitaldocumentlockapp\\backend\\digitaldocumentlockcommon\\dtos\\profiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -376,322 +382,249 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:34:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAiwIwAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T14:34:02.804Z",
-              "EditorCaption": ""
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Controllers\\ProfileController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:34:48.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignupController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\SignupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\SignupController.cs",
+              "RelativeToolTip": "Controllers\\SignupController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T06:43:05.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAA+AAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAABsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T13:01:05.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
               "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "Controllers\\DashboardController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABIAAABZAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T12:47:08.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProfileService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAcwA8AAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:26:59.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAAAIgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T06:17:26.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DashboardService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T04:38:36.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DocumentRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAmwCwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T06:39:27.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DocumentService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAADEAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:43:40.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "DocumentController.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DocumentController.cs",
               "RelativeDocumentMoniker": "Controllers\\DocumentController.cs",
               "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\DocumentController.cs",
               "RelativeToolTip": "Controllers\\DocumentController.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHIAAABaAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T06:59:07.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Mapping\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Mapping\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Mapping\\AutoMapperProfile.cs",
-              "RelativeToolTip": "Mapping\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAiwAwAAABVAAAA",
+              "DocumentIndex": 5,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAACUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T05:14:40.165Z",
+              "WhenOpened": "2025-05-17T10:35:18.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\DashboardService.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAwwC0AAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T04:38:36.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardData.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:40:19.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ActivityLogDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T04:59:08.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserActivityLogRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T05:11:10.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "SignUpService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAiwDAAAAAJAAAA",
+              "Title": "UserActivityLogRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAACsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T14:20:16.324Z",
+              "WhenOpened": "2025-07-15T05:26:36.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UserSummaryDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAQwFoAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T04:55:16.032Z",
+              "WhenOpened": "2025-07-16T06:39:27.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "SignupRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAjwC4AAAA4AAAA",
+              "Title": "IUserActivityLogService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T06:59:35.931Z",
+              "WhenOpened": "2025-07-29T07:04:08.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AdminDocumentDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:40:10.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserStatusUpdateDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:43:27.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ISignUpService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T14:22:49.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ISignupRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAgwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:11:08.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IDocumentService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:42:40.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IDocumentRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAIwAwAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:11:15.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAACoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T04:12:57.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T05:08:06.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAIwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T04:11:42.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:32:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\UnitOfWork.cs",
               "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\UnitOfWork.cs",
               "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\UnitOfWork.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAADwvyAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAxwA4AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T05:19:11.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 14,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\GenericRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAUwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:12:57.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:11:42.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T05:08:06.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Mapping\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Mapping\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Mapping\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T05:14:40.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "IDashboardService.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
@@ -704,58 +637,192 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Document.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\Document.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\Document.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAmAAAA",
+              "DocumentIndex": 19,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\DocumentService.cs",
+              "ViewState": "AQIAAOgAAAAAAAAAAAAkwP4AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T09:07:58.174Z",
+              "WhenOpened": "2025-07-25T06:43:40.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DocumentEncryptionService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T11:20:57.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IDocumentRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T05:11:15.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\LoginService.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAIQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T06:17:26.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IDocumentService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IDocumentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T06:42:40.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SignupRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T06:59:35.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Title": "ISignUpService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignUpService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T07:26:08.261Z",
+              "WhenOpened": "2025-07-25T14:22:49.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Title": "SignUpService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\SignUpService.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAFQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:11:13.816Z",
+              "WhenOpened": "2025-07-25T14:20:16.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserActivityService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\UserActivityService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\UserActivityService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\UserActivityService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\UserActivityService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T06:39:29.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProfileService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\ProfileService.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAAI0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T05:26:59.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "UserSummaryDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UserSummaryDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T04:55:16.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserStatusUpdateDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UserStatusUpdateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:43:27.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "UserActivityLog.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
               "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
               "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:10:46.108Z"
+              "WhenOpened": "2025-07-15T05:10:46.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
+              "Title": "ISignupRepository.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T05:11:08.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "IProfileService.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileService.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IProfileService.cs",
@@ -767,203 +834,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "DocumentDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:41:10.871Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RefreshToken.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T11:03:34.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\User.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T07:23:34.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "DocumentPasswordDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:41:35.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ActivityLogDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\ActivityLogDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T04:59:08.373Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "DashboardData.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\DashboardData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\ILoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:40:19.377Z"
+              "WhenOpened": "2025-07-15T05:11:13.816Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAFkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T10:35:18.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "LoginResponseDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:42:15.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "LoginResultDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:42:22.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "TokenDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T17:33:58.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserLoginDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:43:20.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-15T14:31:29.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UpdateProfileRequest.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:43:07.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "UploadResultDto.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:43:13.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "SignupController.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\SignupController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\SignupController.cs",
-              "RelativeToolTip": "Controllers\\SignupController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T06:43:05.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "Controllers\\ProfileController.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAF4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T14:34:48.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
               "Title": "IEncryptionService.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IEncryptionService.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IEncryptionService.cs",
@@ -975,31 +858,199 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "UserActivityLogRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAEAAAAAJAAAA",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAEQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:26:36.583Z"
+              "WhenOpened": "2025-05-15T14:34:02.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ProfileImageRequest.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:42:49.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UserLoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:43:20.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:26:08.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:42:15.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-15T14:31:29.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AdminDocumentDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\AdminDocumentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:40:10.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\Document.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T09:07:58.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DocumentDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:41:10.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\RefreshToken.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T11:03:34.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:23:34.371Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 47,
-              "Title": "IUserActivityLogRepository.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Interfaces\\IUserActivityLogRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAvAAAA",
+              "Title": "DocumentPasswordDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentPasswordDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T05:11:10.018Z"
+              "WhenOpened": "2025-07-24T06:41:35.139Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 48,
+              "Title": "LoginResultDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\LoginResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:42:22.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "TokenDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\TokenDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T17:33:58.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UpdateProfileRequest.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UpdateProfileRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:43:07.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UploadResultDto.cs",
+              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
+              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
+              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
+              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\UploadResultDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:43:13.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "DigitalDocumentLockRepository.csproj",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
@@ -1011,7 +1062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "DigitalDocumentLockCommon.csproj",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
@@ -1023,7 +1074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "DigitalDocumentLockAPI.csproj",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\DigitalDocumentLockAPI.csproj",
               "RelativeDocumentMoniker": "DigitalDocumentLockAPI.csproj",
@@ -1035,19 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "DocumentEncryptionService.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockRepository\\Services\\DocumentEncryptionService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAiwDoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T11:20:57.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "ResultDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ResultDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\ResultDto.cs",
@@ -1059,7 +1098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "DocumentEncryptionSettings.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentEncryptionSettings.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentEncryptionSettings.cs",
@@ -1071,7 +1110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "TestController.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\TestController.cs",
               "RelativeDocumentMoniker": "TestController.cs",
@@ -1083,7 +1122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "DocumentUploadDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentUploadDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentUploadDto.cs",
@@ -1095,19 +1134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "ProfileImageRequest.cs",
-              "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
-              "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
-              "ToolTip": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
-              "RelativeToolTip": "..\\DigitalDocumentLockCommon\\DTOs\\ProfileImageRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:42:49.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "ProfileDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\ProfileDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\ProfileDto.cs",
@@ -1119,7 +1146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "DownloadRequest.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DownloadRequest.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DownloadRequest.cs",
@@ -1131,7 +1158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "DocumentPreviewDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentPreviewDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentPreviewDto.cs",
@@ -1143,7 +1170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "DocumentOperationResultDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentOperationResultDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentOperationResultDto.cs",
@@ -1155,7 +1182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "DocumentDownloadRequest.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDownloadRequest.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDownloadRequest.cs",
@@ -1167,7 +1194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "DocumentDownloadDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDownloadDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDownloadDto.cs",
@@ -1179,7 +1206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "DocumentDisplayDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DocumentDisplayDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DocumentDisplayDto.cs",
@@ -1191,7 +1218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "DashboardStatsDto.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\DTOs\\DashboardStatsDto.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\DTOs\\DashboardStatsDto.cs",
@@ -1203,7 +1230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "AppDbContextFactory.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs",
@@ -1215,7 +1242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "DigitalDocumentLockAPI.http",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\DigitalDocumentLockAPI.http",
               "RelativeDocumentMoniker": "DigitalDocumentLockAPI.http",
@@ -1227,7 +1254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\bin\\Debug\\net9.0\\appsettings.json",
               "RelativeDocumentMoniker": "bin\\Debug\\net9.0\\appsettings.json",
@@ -1239,7 +1266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -1251,7 +1278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "20250526180015_AddProfileImageUrlToUser.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Migrations\\20250526180015_AddProfileImageUrlToUser.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Migrations\\20250526180015_AddProfileImageUrlToUser.cs",
@@ -1263,7 +1290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "20250524174629_CreateDocumentsTable.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
@@ -1275,7 +1302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "20250529144346_AddUserActivityLogTable.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
@@ -1287,7 +1314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -1299,7 +1326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "20250524174001_InitialBaseline.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
@@ -1311,7 +1338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "20250527050727_AddFileSizeTypeAndDeleteIndToDocument.cs",
               "DocumentMoniker": "C:\\OneDrive - H\u0026R BLOCK LTD\\Desktop\\project\\DigitalDocumentLockApp\\backend\\DigitalDocumentLockCommon\\Migrations\\20250527050727_AddFileSizeTypeAndDeleteIndToDocument.cs",
               "RelativeDocumentMoniker": "..\\DigitalDocumentLockCommon\\Migrations\\20250527050727_AddFileSizeTypeAndDeleteIndToDocument.cs",
@@ -1323,7 +1350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "SignupRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
@@ -1332,7 +1359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "ProfileRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\ProfileRepository.cs",
@@ -1341,7 +1368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "ISignupRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
@@ -1350,7 +1377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "IProfileRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IProfileRepository.cs",
@@ -1359,7 +1386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "ILoginRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
@@ -1368,7 +1395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "LoginRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
@@ -1377,7 +1404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
@@ -1386,7 +1413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "DigitalDocumentLockRepository.csproj",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\DigitalDocumentLockRepository.csproj",
@@ -1395,7 +1422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "DigitalDocumentLockCommon.csproj",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\DigitalDocumentLockCommon.csproj",
@@ -1404,7 +1431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 103,
               "Title": "DocumentRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
@@ -1413,7 +1440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 104,
               "Title": "DocumentEncryptionService.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DocumentEncryptionService.cs",
@@ -1422,7 +1449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 105,
               "Title": "20250529144346_AddUserActivityLogTable.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250529144346_AddUserActivityLogTable.cs",
@@ -1431,7 +1458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 106,
               "Title": "IDocumentRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
@@ -1440,7 +1467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 107,
               "Title": "DashboardService.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\DashboardService.cs",
@@ -1449,7 +1476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 108,
               "Title": "UserActivityLogRepository.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Repository\\UserActivityLogRepository.cs",
@@ -1458,7 +1485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "Sdk.props",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.props",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.props",
@@ -1470,7 +1497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "Sdk.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.Web\\Sdk\\Sdk.targets",
@@ -1482,7 +1509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 109,
               "Title": "UpdateProfileRequest.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UpdateProfileRequest.cs",
@@ -1491,7 +1518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 110,
               "Title": "IDashboardService.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockRepository\\Interfaces\\IDashboardService.cs",
@@ -1500,7 +1527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 111,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\User.cs",
@@ -1509,7 +1536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 112,
               "Title": "20250524174001_InitialBaseline.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174001_InitialBaseline.cs",
@@ -1518,7 +1545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 113,
               "Title": "20250524174629_CreateDocumentsTable.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Migrations\\20250524174629_CreateDocumentsTable.cs",
@@ -1527,7 +1554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 114,
               "Title": "UserActivityLog.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserActivityLog.cs",
@@ -1536,7 +1563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 115,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
@@ -1545,7 +1572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 116,
               "Title": "LoginResultDto.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResultDto.cs",
@@ -1554,7 +1581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 117,
               "Title": "LoginResponseDto.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
@@ -1563,7 +1590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 118,
               "Title": "Document.cs",
               "DocumentMoniker": "E:\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
               "ToolTip": "E:\\backend\\DigitalDocumentLockCommon\\Models\\Document.cs",
@@ -1572,7 +1599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "IDocumentRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\IDocumentRepository.cs",
@@ -1583,7 +1610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "20250520065258_CreateDocumentsTable.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520065258_CreateDocumentsTable.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520065258_CreateDocumentsTable.cs",
@@ -1594,7 +1621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "Document.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\Document.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\Document.cs",
@@ -1605,7 +1632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "20250520064929_InitialBaseline.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520064929_InitialBaseline.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Migrations\\20250520064929_InitialBaseline.cs",
@@ -1616,7 +1643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "ISignupRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ISignupRepository.cs",
@@ -1627,7 +1654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "DocumentRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\DocumentRepository.cs",
@@ -1638,7 +1665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "LoginResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\LoginResponseDto.cs",
@@ -1649,7 +1676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockAPI\\DashboardController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockAPI\\DashboardController.cs",
@@ -1660,7 +1687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\UserLoginDto.cs",
@@ -1671,7 +1698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "ILoginRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Interfaces\\ILoginRepository.cs",
@@ -1682,7 +1709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "LoginRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\LoginRepository.cs",
@@ -1693,7 +1720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "SignupRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockRepository\\Repository\\SignupRepository.cs",
@@ -1704,7 +1731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Models\\User.cs",
@@ -1715,7 +1742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContext.cs",
@@ -1726,7 +1753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "AppDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\User\\source\\repos\\New folder\\DigitalDocumentLockCommon\\Db\\AppDbContextFactory.cs",

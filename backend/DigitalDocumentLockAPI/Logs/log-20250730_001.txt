@@ -1,0 +1,32 @@
+2025-07-30 00:04:45.714 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-30 00:05:53.609 +05:30 [INF] Login attempt for email: meghanabeliraya@gmail.com
+2025-07-30 00:05:54.459 +05:30 [INF] User logged in: 2
+2025-07-30 00:05:54.608 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 1609.2470 ms
+2025-07-30 00:05:54.706 +05:30 [INF] Fetching admin dashboard data.
+2025-07-30 00:05:54.810 +05:30 [INF] Successfully fetched admin dashboard data.
+2025-07-30 00:05:54.822 +05:30 [INF] HTTP GET /api/dashboard/admin/data responded 200 in 172.2926 ms
+2025-07-30 00:05:57.692 +05:30 [INF] Admin requested all documents.
+2025-07-30 00:05:57.745 +05:30 [INF] HTTP GET /api/admin/documents responded 200 in 76.1451 ms
+2025-07-30 00:05:58.930 +05:30 [INF] Admin requested user summaries.
+2025-07-30 00:05:58.947 +05:30 [INF] Retrieved 4 user summaries.
+2025-07-30 00:05:58.950 +05:30 [INF] HTTP GET /api/Admin/all-users-summary responded 200 in 31.6169 ms
+2025-07-30 00:06:17.904 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-30 00:06:18.224 +05:30 [INF] User logged in: 1
+2025-07-30 00:06:18.232 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 336.2760 ms
+2025-07-30 00:06:18.258 +05:30 [INF] Fetching user dashboard data.
+2025-07-30 00:06:18.266 +05:30 [INF] Fetching profile for userId: 1
+2025-07-30 00:06:18.292 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-30 00:06:18.296 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-30 00:06:18.297 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 44.2698 ms
+2025-07-30 00:06:18.301 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 46.9201 ms
+2025-07-30 00:06:21.357 +05:30 [INF] User 1 requested their documents
+2025-07-30 00:06:21.370 +05:30 [INF] HTTP GET /api/document/my-documents responded 200 in 25.0874 ms
+2025-07-30 00:06:22.861 +05:30 [INF] User 1 attempting to preview document 16 (Admin: false)
+2025-07-30 00:06:22.883 +05:30 [INF] Preview successful for document 16 by user 1
+2025-07-30 00:06:22.895 +05:30 [INF] HTTP GET /api/document/preview/16 responded 200 in 41.3875 ms
+2025-07-30 00:07:47.315 +05:30 [INF] User 1 requested download for document 16
+2025-07-30 00:07:47.486 +05:30 [INF] User 1 successfully downloaded document: grade 9.pdf
+2025-07-30 00:07:47.490 +05:30 [INF] HTTP POST /api/document/download/16 responded 200 in 182.7769 ms
+2025-07-30 00:08:52.749 +05:30 [INF] User 1 logged out.
+2025-07-30 00:08:52.759 +05:30 [INF] HTTP POST /api/Login/logout responded 200 in 28.6355 ms
+[2025-07-30 00:38:50 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;

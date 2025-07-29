@@ -1,57 +1,66 @@
 ﻿using DigitalDocumentLockCommom.DTOs;
 using DigitalDocumentLockCommon.Models;
 using DigitalDocumentLockRepository.Interfaces;
-using DigitalDocumentLockRepository.Repository;
+using DigitalDocumentLockRepository.UnitOfWork;
+using BCrypt.Net;
 
 namespace DigitalDocumentLockRepository.Services
 {
     public class SignUpService : ISignUpService
     {
-        private readonly ISignupRepository _signupRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public SignUpService(ISignupRepository signupRepository)
+        public SignUpService(IUnitOfWork unitOfWork)
         {
-            _signupRepository = signupRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<ResultDto> SignupAsync(User user)
         {
-            var existingUser = await _signupRepository.GetByEmailAsync(user.Email);
+            // Check if user with email already exists
+            var existingUser = await _unitOfWork.Users.GetByEmailAsync(user.Email);
             if (existingUser != null)
             {
                 return new ResultDto
                 {
                     Success = false,
-                    Message = "Email already registered"
+                    Message = "Email already exists"
                 };
             }
 
+            // Hash password before storing
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-            var result = await _signupRepository.SignupAsync(user);
-            return result;
+
+            await _unitOfWork.Users.SignupAsync(user);
+            await _unitOfWork.CompleteAsync(); // Commit changes
+
+            return new ResultDto
+            {
+                Success = true,
+                Message = "Signup successful"
+            };
         }
 
         public async Task<UserStatusUpdateDto?> ToggleUserStatusAsync(int userId)
         {
-            var user = await _signupRepository.GetUserByIdAsync(userId);
-            if (user == null) return null;
+            var user = await _unitOfWork.Users.GetByIdAsync(userId);
+            if (user == null)
+                return null;
 
             user.IsActive = !user.IsActive;
-
-            await _signupRepository.UpdateUserAsync(user); // Ensure this persists changes
+            await _unitOfWork.Users.UpdateAsync(user);
+            await _unitOfWork.CompleteAsync();
 
             return new UserStatusUpdateDto
             {
                 UserId = user.Id,
-                IsActive = user.IsActive,
-                Message = user.IsActive ? "User activated successfully." : "User deactivated successfully."
+                IsActive = user.IsActive
             };
         }
 
-
         public async Task<ResultDto> UpdateProfileImageAsync(int userId, string imageUrl)
         {
-            var user = await _signupRepository.GetUserByIdAsync(userId);
+            var user = await _unitOfWork.Users.GetByIdAsync(userId);
             if (user == null)
             {
                 return new ResultDto
@@ -62,12 +71,13 @@ namespace DigitalDocumentLockRepository.Services
             }
 
             user.ProfileImageUrl = imageUrl;
-            await _signupRepository.UpdateUserAsync(user);
+            await _unitOfWork.Users.UpdateAsync(user);
+            await _unitOfWork.CompleteAsync();
 
             return new ResultDto
             {
                 Success = true,
-                Message = "Profile image updated"
+                Message = "Profile image updated successfully"
             };
         }
     }

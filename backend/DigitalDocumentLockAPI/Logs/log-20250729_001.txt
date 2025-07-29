@@ -1,0 +1,77 @@
+2025-07-29 00:14:02.007 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-29 00:15:12.649 +05:30 [INF] Signup attempt for user: sanyarao@gmail.com
+2025-07-29 00:15:13.192 +05:30 [INF] Signup successful for sanyarao@gmail.com
+2025-07-29 00:15:13.219 +05:30 [INF] HTTP POST /api/Signup responded 200 in 1219.1070 ms
+2025-07-29 00:15:23.756 +05:30 [INF] Login attempt for email: sanyarao@gmail.com
+2025-07-29 00:15:23.808 +05:30 [ERR] HTTP POST /api/Login/userLogin responded 500 in 66.4670 ms
+BCrypt.Net.SaltParseException: Invalid salt version
+   at BCrypt.Net.BCrypt.HashPassword(String inputKey, String salt, Boolean enhancedEntropy, HashType hashType)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at DigitalDocumentLockRepository.Services.LoginService.LoginAsync(String email, String password) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\LoginService.cs:line 32
+   at DigitalDocumentLockAPI.Controllers.LoginController.Login(UserLoginDto loginDto) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\LoginController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-07-29 00:15:23.834 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+BCrypt.Net.SaltParseException: Invalid salt version
+   at BCrypt.Net.BCrypt.HashPassword(String inputKey, String salt, Boolean enhancedEntropy, HashType hashType)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at DigitalDocumentLockRepository.Services.LoginService.LoginAsync(String email, String password) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockRepository\Services\LoginService.cs:line 32
+   at DigitalDocumentLockAPI.Controllers.LoginController.Login(UserLoginDto loginDto) in C:\OneDrive - H&R BLOCK LTD\Desktop\project\DigitalDocumentLockApp\backend\DigitalDocumentLockAPI\Controllers\LoginController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-29 00:15:55.087 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-29 00:15:55.399 +05:30 [INF] User logged in: 1
+2025-07-29 00:15:55.435 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 353.8424 ms
+2025-07-29 00:15:55.485 +05:30 [INF] Fetching user dashboard data.
+2025-07-29 00:15:55.491 +05:30 [INF] Fetching profile for userId: 1
+2025-07-29 00:15:55.507 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-29 00:15:55.513 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 38.6851 ms
+2025-07-29 00:15:55.557 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-29 00:15:55.565 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 90.5176 ms
+[2025-07-29 00:21:23 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-29 00:21:31 INF] User 1 logged out.
+[2025-07-29 00:21:31 INF] HTTP POST /api/Login/logout responded 200 in 983.5395 ms
+[2025-07-29 00:22:40 INF] Signup attempt for user: Sakshi_anand@gmail.com
+[2025-07-29 00:22:41 INF] Signup successful for Sakshi_anand@gmail.com
+[2025-07-29 00:22:41 INF] HTTP POST /api/Signup responded 200 in 660.3420 ms
+[2025-07-29 00:22:48 INF] Login attempt for email: Sakshi_anand@gmail.com
+[2025-07-29 00:22:48 INF] User logged in: 6
+[2025-07-29 00:22:48 INF] HTTP POST /api/Login/userLogin responded 200 in 349.9275 ms
+[2025-07-29 00:22:48 INF] Fetching user dashboard data.
+[2025-07-29 00:22:48 INF] Fetching profile for userId: 6
+[2025-07-29 00:22:48 INF] Profile retrieved successfully for userId: 6
+[2025-07-29 00:22:48 INF] HTTP GET /api/profile/me responded 200 in 40.3375 ms
+[2025-07-29 00:22:48 INF] Successfully fetched user dashboard data.
+[2025-07-29 00:22:48 INF] HTTP GET /api/dashboard/user responded 200 in 79.2770 ms
+[2025-07-29 00:22:54 INF] User 6 requested their documents
+[2025-07-29 00:22:54 INF] HTTP GET /api/document/my-documents responded 200 in 25.6062 ms
+[2025-07-29 00:23:17 INF] User 6 is attempting to upload file: grade 9.pdf
+[2025-07-29 00:23:17 INF] User 6 successfully uploaded file: grade 9.pdf
+[2025-07-29 00:23:17 INF] HTTP POST /api/document/upload responded 200 in 445.8921 ms
+[2025-07-29 00:23:19 INF] User 6 requested their documents
+[2025-07-29 00:23:19 INF] HTTP GET /api/document/my-documents responded 200 in 21.0343 ms
+[2025-07-29 00:23:25 INF] User 6 logged out.
+[2025-07-29 00:23:25 INF] HTTP POST /api/Login/logout responded 200 in 8.3341 ms

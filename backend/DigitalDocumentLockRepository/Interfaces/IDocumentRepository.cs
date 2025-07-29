@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DigitalDocumentLockRepository.Interfaces
 {
-    public interface IDocumentRepository
+    public interface IDocumentRepository : IGenericRepository<Document>
     {
         Task<List<Document>> GetDocumentsByUserAsync(int userId);
         Task<List<Document>> GetAdminDocumentsAsync();
@@ -14,9 +14,10 @@ namespace DigitalDocumentLockRepository.Interfaces
         Task<List<Document>> GetUserDocumentsAsync(int userId);
         Task<int> GetActiveDocumentCountAsync();
         Task<int> GetTodayUploadedDocumentCountAsync();
-        Task SaveDocumentAsync(Document document);
-        Task<Document?> GetDocumentByIdAsync(int documentId);
 
-        
+        Task<Document?> GetDocumentByIdAsync(int documentId);
+        Task<Document?> GetDocumentByIdAndUserAsync(int documentId, int userId);
+        Task SaveDocumentAsync(Document document);
+
     }
 }

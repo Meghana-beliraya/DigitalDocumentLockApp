@@ -1,7 +1,7 @@
 ﻿using DigitalDocumentLockCommon.Db;
 using DigitalDocumentLockRepository.Interfaces;
-using DigitalDocumentLockRepository.Repositories;
 using DigitalDocumentLockRepository.Repository;
+using DigitalDocumentLockRepository.Repositories;
 
 namespace DigitalDocumentLockRepository.UnitOfWork
 {
@@ -9,24 +9,23 @@ namespace DigitalDocumentLockRepository.UnitOfWork
     {
         private readonly AppDbContext _context;
 
-        public ISignupRepository Signup { get; }
-        public IDocumentRepository DocumentRepository { get; }
+        public ISignupRepository Users { get; private set; }
+        public IDocumentRepository Document { get; private set; } // Add others similarly
+
+        public IUserActivityLogRepository UserActivityLogs { get; private set; }
 
         public UnitOfWork(AppDbContext context)
         {
             _context = context;
-            Signup = new SignupRepository(_context);
-            DocumentRepository = new DocumentRepository(_context);
+
+            Users = new SignupRepository(_context);
+            Document = new DocumentRepository(_context); // Only if you have this repository
+            UserActivityLogs = new UserActivityLogRepository(_context);
         }
 
         public async Task<int> CompleteAsync()
         {
             return await _context.SaveChangesAsync();
-        }
-
-        public void Dispose()
-        {
-            _context.Dispose();
         }
     }
 }

@@ -1,0 +1,66 @@
+2025-07-29 00:21:23.455 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-29 00:21:31.322 +05:30 [INF] User 1 logged out.
+2025-07-29 00:21:31.358 +05:30 [INF] HTTP POST /api/Login/logout responded 200 in 983.5395 ms
+2025-07-29 00:22:40.887 +05:30 [INF] Signup attempt for user: Sakshi_anand@gmail.com
+2025-07-29 00:22:41.474 +05:30 [INF] Signup successful for Sakshi_anand@gmail.com
+2025-07-29 00:22:41.481 +05:30 [INF] HTTP POST /api/Signup responded 200 in 660.3420 ms
+2025-07-29 00:22:48.179 +05:30 [INF] Login attempt for email: Sakshi_anand@gmail.com
+2025-07-29 00:22:48.498 +05:30 [INF] User logged in: 6
+2025-07-29 00:22:48.517 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 349.9275 ms
+2025-07-29 00:22:48.572 +05:30 [INF] Fetching user dashboard data.
+2025-07-29 00:22:48.572 +05:30 [INF] Fetching profile for userId: 6
+2025-07-29 00:22:48.592 +05:30 [INF] Profile retrieved successfully for userId: 6
+2025-07-29 00:22:48.597 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 40.3375 ms
+2025-07-29 00:22:48.625 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-29 00:22:48.636 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 79.2770 ms
+2025-07-29 00:22:54.378 +05:30 [INF] User 6 requested their documents
+2025-07-29 00:22:54.389 +05:30 [INF] HTTP GET /api/document/my-documents responded 200 in 25.6062 ms
+2025-07-29 00:23:17.337 +05:30 [INF] User 6 is attempting to upload file: grade 9.pdf
+2025-07-29 00:23:17.737 +05:30 [INF] User 6 successfully uploaded file: grade 9.pdf
+2025-07-29 00:23:17.740 +05:30 [INF] HTTP POST /api/document/upload responded 200 in 445.8921 ms
+2025-07-29 00:23:19.562 +05:30 [INF] User 6 requested their documents
+2025-07-29 00:23:19.576 +05:30 [INF] HTTP GET /api/document/my-documents responded 200 in 21.0343 ms
+2025-07-29 00:23:25.618 +05:30 [INF] User 6 logged out.
+2025-07-29 00:23:25.620 +05:30 [INF] HTTP POST /api/Login/logout responded 200 in 8.3341 ms
+[2025-07-29 00:43:56 INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+[2025-07-29 00:44:13 INF] Login attempt for email: Sakshi_anand@gmail.com
+[2025-07-29 00:44:14 INF] User logged in: 6
+[2025-07-29 00:44:14 INF] HTTP POST /api/Login/userLogin responded 200 in 1435.4173 ms
+[2025-07-29 00:44:14 INF] Fetching user dashboard data.
+[2025-07-29 00:44:14 INF] Fetching profile for userId: 6
+[2025-07-29 00:44:14 INF] Profile retrieved successfully for userId: 6
+[2025-07-29 00:44:14 INF] HTTP GET /api/profile/me responded 200 in 89.8676 ms
+[2025-07-29 00:44:14 INF] Successfully fetched user dashboard data.
+[2025-07-29 00:44:14 INF] HTTP GET /api/dashboard/user responded 200 in 121.7950 ms
+[2025-07-29 00:44:16 INF] User 6 requested their documents
+[2025-07-29 00:44:16 INF] HTTP GET /api/document/my-documents responded 200 in 71.3875 ms
+[2025-07-29 00:44:17 INF] User 6 attempting to preview document 17 (Admin: false)
+[2025-07-29 00:44:17 INF] Preview successful for document 17 by user 6
+[2025-07-29 00:44:17 INF] HTTP GET /api/document/preview/17 responded 200 in 82.7402 ms
+[2025-07-29 00:44:35 INF] User 6 requested download for document 17
+[2025-07-29 00:44:35 INF] User 6 successfully downloaded document: grade 9.pdf
+[2025-07-29 00:44:35 INF] HTTP POST /api/document/download/17 responded 200 in 379.5846 ms
+[2025-07-29 00:45:23 INF] User 6 is attempting to upload file: mydoc.docx
+[2025-07-29 00:45:24 INF] User 6 successfully uploaded file: mydoc.docx
+[2025-07-29 00:45:24 INF] HTTP POST /api/document/upload responded 200 in 173.0096 ms
+[2025-07-29 00:45:26 INF] User 6 requested their documents
+[2025-07-29 00:45:26 INF] HTTP GET /api/document/my-documents responded 200 in 10.7589 ms
+[2025-07-29 00:45:51 INF] User 6 logged out.
+[2025-07-29 00:45:51 INF] HTTP POST /api/Login/logout responded 200 in 37.3922 ms
+[2025-07-29 00:45:55 INF] Login attempt for email: meghanabeliraya@gmail.com
+[2025-07-29 00:45:56 INF] User logged in: 2
+[2025-07-29 00:45:56 INF] HTTP POST /api/Login/userLogin responded 200 in 164.3601 ms
+[2025-07-29 00:45:56 INF] Fetching admin dashboard data.
+[2025-07-29 00:45:56 INF] Successfully fetched admin dashboard data.
+[2025-07-29 00:45:56 INF] HTTP GET /api/dashboard/admin/data responded 200 in 83.5446 ms
+[2025-07-29 00:45:57 INF] Admin requested user summaries.
+[2025-07-29 00:45:57 INF] Retrieved 4 user summaries.
+[2025-07-29 00:45:57 INF] HTTP GET /api/Admin/all-users-summary responded 200 in 35.7629 ms
+[2025-07-29 00:45:58 INF] Admin requested all documents.
+[2025-07-29 00:45:58 INF] HTTP GET /api/admin/documents responded 200 in 28.3446 ms
+[2025-07-29 00:46:03 INF] User 2 attempting to preview document 12 (Admin: true)
+[2025-07-29 00:46:03 INF] Preview successful for document 12 by user 2
+[2025-07-29 00:46:03 INF] HTTP GET /api/document/preview/12 responded 200 in 235.2458 ms
+[2025-07-29 00:46:11 INF] User 2 attempting to preview document 18 (Admin: true)
+[2025-07-29 00:46:11 WRN] Preview failed for user 2 on document 18: Failed to prepare PDF preview
+[2025-07-29 00:46:11 INF] HTTP GET /api/document/preview/18 responded 400 in 11.8054 ms
