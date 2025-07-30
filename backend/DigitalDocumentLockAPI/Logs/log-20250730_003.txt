@@ -1,0 +1,17 @@
+2025-07-30 10:23:14.180 +05:30 [INF] DEBUG: Connection string is: Server=TRPRDBFM9KF3-L\SQLEXPRESS;Database=digital_lock;Trusted_Connection=True;TrustServerCertificate=True;
+2025-07-30 10:24:08.427 +05:30 [INF] Login attempt for email: sura@gmail.com
+2025-07-30 10:24:09.328 +05:30 [INF] User logged in: 1
+2025-07-30 10:24:09.469 +05:30 [INF] HTTP POST /api/Login/userLogin responded 200 in 1539.3261 ms
+2025-07-30 10:24:09.600 +05:30 [INF] Fetching user dashboard data.
+2025-07-30 10:24:09.607 +05:30 [INF] Fetching profile for userId: 1
+2025-07-30 10:24:09.639 +05:30 [INF] Profile retrieved successfully for userId: 1
+2025-07-30 10:24:09.644 +05:30 [INF] HTTP GET /api/profile/me responded 200 in 129.1468 ms
+2025-07-30 10:24:09.681 +05:30 [INF] Successfully fetched user dashboard data.
+2025-07-30 10:24:09.689 +05:30 [INF] HTTP GET /api/dashboard/user responded 200 in 173.8858 ms
+2025-07-30 10:27:39.115 +05:30 [INF] User 1 is attempting to upload file: Doc2.pdf
+2025-07-30 10:27:39.710 +05:30 [INF] User 1 successfully uploaded file: Doc2.pdf
+2025-07-30 10:27:39.714 +05:30 [INF] HTTP POST /api/document/upload responded 200 in 638.2508 ms
+2025-07-30 10:27:41.611 +05:30 [INF] User 1 requested their documents
+2025-07-30 10:27:41.634 +05:30 [INF] HTTP GET /api/document/my-documents responded 200 in 32.0665 ms
+2025-07-30 10:27:46.343 +05:30 [INF] User 1 logged out.
+2025-07-30 10:27:46.351 +05:30 [INF] HTTP POST /api/Login/logout responded 200 in 18.8082 ms

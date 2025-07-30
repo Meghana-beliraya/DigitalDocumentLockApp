@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigitalDocumentLockAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbc87005cbd8441fa0ac8aca7e9ccaa90e98e13f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a58dc14efcc6f84e111c9a1ae4de9e8aeff2ee00")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigitalDocumentLockAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitalDocumentLockAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

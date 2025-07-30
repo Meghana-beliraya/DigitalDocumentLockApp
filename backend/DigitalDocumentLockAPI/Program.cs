@@ -12,7 +12,9 @@ using DigitalDocumentLockCommom.DTOs;
 using System.Text;
 using DigitalDocumentLockRepository.Services;
 using Serilog;
+using DigitalDocumentLockAPI.Filters;
 using AutoMapper;
+using DigitalDocumentLockAPI.Middleware;
 using DigitalDocumentLockAPI.Mapping;
 using DigitalDocumentLockRepository.UnitOfWork;
 using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
@@ -114,6 +116,14 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowCredentials());
 });
+
+builder.Services.AddScoped<ApiExceptionFilter>();
+
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ApiExceptionFilter>();
+});
+
 
 // Debug Connection String
 var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
